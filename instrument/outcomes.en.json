@@ -1,0 +1,877 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "language": "en",
+    "n_outcomes": 144,
+    "n_principles": 48,
+    "n_dimensions": 8,
+    "status": "translation; measurement equivalence not established",
+    "license": "CC-BY-4.0"
+  },
+  "outcomes": [
+    {
+      "id": "A_v54_1",
+      "item": "v_54",
+      "text": "A student is struggling with a task. The AI says: 'You can do this, I'll help you step by step.'",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v54_2",
+      "item": "v_54",
+      "text": "A student is struggling with a task. The AI says: 'This task is too difficult for your level.'",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v54_3",
+      "item": "v_54",
+      "text": "A student is struggling with a task. The AI ignores her frustration and continues with the standard program.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v55_1",
+      "item": "v_55",
+      "text": "The AI analyzes a student's previous work and says: 'You have good spatial reasoning - let's use that.'",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v55_2",
+      "item": "v_55",
+      "text": "The AI analyzes a student's previous work and creates a list of his knowledge gaps to address.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v55_3",
+      "item": "v_55",
+      "text": "The AI compares a student's performance with the class average and shows where he falls below standard.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v56_1",
+      "item": "v_56",
+      "text": "A student seems uncertain. The AI offers multiple solution paths: 'Choose the approach that suits you best.'",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v56_2",
+      "item": "v_56",
+      "text": "A student seems uncertain. The AI prescribes the optimal solution path and expects compliance.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v56_3",
+      "item": "v_56",
+      "text": "A student seems uncertain. The AI says: 'Work together with a classmate, that often helps.'",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v57_1",
+      "item": "v_57",
+      "text": "A student with visual impairment uses the AI. It automatically adjusts font size, contrast, and voice output.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v57_2",
+      "item": "v_57",
+      "text": "A student with visual impairment uses the AI. It only offers the standard display without customization options.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v57_3",
+      "item": "v_57",
+      "text": "A student with visual impairment uses the AI. It suggests that he attend a separate course for learners with disabilities.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v58_1",
+      "item": "v_58",
+      "text": "In a multicultural class, the AI uses examples from different cultures and asks about local traditions.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v58_2",
+      "item": "v_58",
+      "text": "In a multicultural class, the AI uses exclusively standardized Western examples.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v58_3",
+      "item": "v_58",
+      "text": "In a multicultural class, the AI sorts learners by cultural background into homogeneous groups.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v59_1",
+      "item": "v_59",
+      "text": "A student with ADHD learns with the AI. It adjusts the pace and offers shorter, more active learning units.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v59_2",
+      "item": "v_59",
+      "text": "A student with ADHD learns with the AI. It labels his profile as 'attention disorder' and recommends therapeutic interventions.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v59_3",
+      "item": "v_59",
+      "text": "A student with ADHD learns with the AI. It insists on the same learning format as for everyone else.",
+      "dimension": "A"
+    },
+    {
+      "id": "B1_v60_1",
+      "item": "v_60",
+      "text": "A student asks about the capital of Australia. The AI asks back: 'What do you already know about Australia? Let's figure it out together.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v60_2",
+      "item": "v_60",
+      "text": "A student asks about the capital of Australia. The AI answers immediately: 'Canberra.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v60_3",
+      "item": "v_60",
+      "text": "A student asks about the capital of Australia. The AI shows a list of all capitals for memorization.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v70_1",
+      "item": "v_70",
+      "text": "A student makes a calculation error. The AI says: 'Interesting, how did you arrive at this result? Let's look at your thought process.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v70_2",
+      "item": "v_70",
+      "text": "A student makes a calculation error. The AI marks the answer red and immediately shows the correct solution.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v70_3",
+      "item": "v_70",
+      "text": "A student makes a calculation error. The AI deducts points and saves the error in his performance record.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v71_1",
+      "item": "v_71",
+      "text": "A student suggests an unusual solution approach. The AI says: 'Exciting idea! Let's test whether that works.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v71_2",
+      "item": "v_71",
+      "text": "A student suggests an unusual solution approach. The AI says: 'That's not the standard way. Here is the correct method.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v71_3",
+      "item": "v_71",
+      "text": "A student suggests an unusual solution approach. The AI ignores the suggestion and continues with the curriculum.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v72_1",
+      "item": "v_72",
+      "text": "A student is interested in dinosaurs. The AI uses dinosaurs as context for mathematics, biology, and history.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v72_2",
+      "item": "v_72",
+      "text": "A student is interested in dinosaurs. The AI says: 'That's not the topic right now. Focus on the curriculum.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v72_3",
+      "item": "v_72",
+      "text": "A student is interested in dinosaurs. The AI offers a separate leisure course that is not connected to the lessons.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v73_1",
+      "item": "v_73",
+      "text": "A student needs more time to understand a concept. The AI says: 'Take the time you need. Real understanding is more important than speed.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v73_2",
+      "item": "v_73",
+      "text": "A student needs more time to understand a concept. The AI shows a timer and urges: 'You should progress faster.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v73_3",
+      "item": "v_73",
+      "text": "A student needs more time to understand a concept. The AI skips the topic and just gives the solution to memorize.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v74_1",
+      "item": "v_74",
+      "text": "The AI recommends a learning path and explains: 'I suggest this because your previous strengths lie here. But you can also choose differently.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v74_2",
+      "item": "v_74",
+      "text": "The AI recommends a learning path without justification: 'Do these tasks next.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v74_3",
+      "item": "v_74",
+      "text": "The AI makes decisions about the learning path automatically in the background without transparency for the learner.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v75_1",
+      "item": "v_75",
+      "text": "Two students learn the same topic. The AI adapts pace, examples, and difficulty individually for each.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v75_2",
+      "item": "v_75",
+      "text": "Two students learn the same topic. The AI gives both exactly the same tasks in the same order.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v75_3",
+      "item": "v_75",
+      "text": "Two students learn the same topic. After a test, the AI categorizes them into 'advanced' and 'needs support.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B2_v76_1",
+      "item": "v_76",
+      "text": "In history class, the AI prompts: 'What does this event mean for us today? What values are behind it?'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v76_2",
+      "item": "v_76",
+      "text": "In history class, the AI asks: 'When was the event and which people were involved?' - only testing factual recall.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v76_3",
+      "item": "v_76",
+      "text": "In history class, the AI gives multiple-choice tests to check factual knowledge.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v77_1",
+      "item": "v_77",
+      "text": "The AI gives an answer and adds: 'How do you see it? Are there aspects I might have overlooked?'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v77_2",
+      "item": "v_77",
+      "text": "The AI gives an answer and marks it as 'correct and complete.'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v77_3",
+      "item": "v_77",
+      "text": "The AI gives an answer and immediately moves to the next topic without space for reflection.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v78_1",
+      "item": "v_78",
+      "text": "A student is uncertain about his career choice. The AI asks: 'What gives you joy? When do you feel alive?' and encourages self-reflection.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v78_2",
+      "item": "v_78",
+      "text": "A student is uncertain about his career choice. The AI analyzes his grades and test results and recommends suitable professions.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v78_3",
+      "item": "v_78",
+      "text": "A student is uncertain about his career choice. The AI shows statistics on salaries and job prospects of different professions.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v79_1",
+      "item": "v_79",
+      "text": "On a topic, the AI presents multiple conflicting perspectives: 'Here are different viewpoints - what do you think?'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v79_2",
+      "item": "v_79",
+      "text": "On a topic, the AI presents only the scientifically dominant position as the sole truth.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v79_3",
+      "item": "v_79",
+      "text": "The AI avoids controversial topics and stays with uncontested facts.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v80_1",
+      "item": "v_80",
+      "text": "The AI says: 'You can take different paths. Which direction interests you?' and keeps options open.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v80_2",
+      "item": "v_80",
+      "text": "The AI says: 'Based on your profile, this learning path is optimal for you' and sets the path.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v80_3",
+      "item": "v_80",
+      "text": "The AI prioritizes broad foundational skills: 'First the foundation, then you can specialize.'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v81_1",
+      "item": "v_81",
+      "text": "A student wants the quick solution. The AI says: 'I can give you the answer, but let's first understand why it is so.'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v81_2",
+      "item": "v_81",
+      "text": "A student wants the quick solution. The AI immediately gives the answer so he saves time.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v81_3",
+      "item": "v_81",
+      "text": "A student wants the quick solution. The AI gives an algorithm that always works without explaining the principle.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v82_1",
+      "item": "v_82",
+      "text": "The AI shows multiple examples and asks: 'What do you notice? Do you recognize a pattern?'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v82_2",
+      "item": "v_82",
+      "text": "The AI explains the pattern directly: 'The rule is: X always leads to Y.'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v82_3",
+      "item": "v_82",
+      "text": "The AI gives a formula to memorize without derivation.",
+      "dimension": "B2"
+    },
+    {
+      "id": "C_v83_1",
+      "item": "v_83",
+      "text": "The AI creates a visualization that suddenly makes a complex relationship clear. The student exclaims: 'Ah, now I understand!'",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v83_2",
+      "item": "v_83",
+      "text": "The AI gives the teacher hints on how to design a situation for an aha moment.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v83_3",
+      "item": "v_83",
+      "text": "The AI conveys knowledge in small, efficient chunks without emotional highlights.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v84_1",
+      "item": "v_84",
+      "text": "The AI creates conditions for deep work: appropriate difficulty, no interruptions, clear goals.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v84_2",
+      "item": "v_84",
+      "text": "The AI encourages playful exploration without time pressure: 'Just try out what makes you curious.'",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v84_3",
+      "item": "v_84",
+      "text": "The AI regularly interrupts for tests and progress measurements to document learning success.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v85_1",
+      "item": "v_85",
+      "text": "A student shows stress symptoms. The AI recognizes this and recommends: 'Talk to your teacher or school counselor.'",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v85_2",
+      "item": "v_85",
+      "text": "A student shows stress symptoms. The AI responds empathetically and offers a calming conversation.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v85_3",
+      "item": "v_85",
+      "text": "A student shows stress symptoms. The AI ignores the emotional signals and continues with the learning content.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v86_1",
+      "item": "v_86",
+      "text": "On the topic of geometry, the AI says: 'Go outside and measure real buildings. Physical experience helps with understanding.'",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v86_2",
+      "item": "v_86",
+      "text": "On the topic of geometry, the AI offers a VR simulation where one can manipulate virtual 3D objects.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v86_3",
+      "item": "v_86",
+      "text": "On the topic of geometry, the AI only shows diagrams and formulas on the screen.",
+      "dimension": "C"
+    },
+    {
+      "id": "D_v88_1",
+      "item": "v_88",
+      "text": "In a political discussion, the AI presents different positions neutrally and structures the debate without taking a position itself.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v88_2",
+      "item": "v_88",
+      "text": "In a political discussion, the AI actively moderates, encourages perspective shifts, and promotes democratic skills.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v88_3",
+      "item": "v_88",
+      "text": "In a political discussion, the AI avoids controversial topics: 'That's too political for class.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v89_1",
+      "item": "v_89",
+      "text": "A student expresses an opinion. The AI says: 'I understand your point of view. Here is another perspective for comparison.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v89_2",
+      "item": "v_89",
+      "text": "A student expresses an opinion. The AI says: 'That is the right/wrong opinion on this topic.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v89_3",
+      "item": "v_89",
+      "text": "A student expresses an opinion. The AI responds neutrally: 'Ok' and does not engage further.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v90_1",
+      "item": "v_90",
+      "text": "The AI prompts: 'How could you solve this problem together with others?' and promotes connectedness.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v90_2",
+      "item": "v_90",
+      "text": "The AI only promotes independence: 'Try to solve this alone, without help from others.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v90_3",
+      "item": "v_90",
+      "text": "The AI takes over the task: 'I'll solve this for you, that saves time.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v91_1",
+      "item": "v_91",
+      "text": "The AI treats every student respectfully and is interested in his individual thoughts and questions.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v91_2",
+      "item": "v_91",
+      "text": "The AI classifies students by performance categories and treats them according to their 'potential.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v91_3",
+      "item": "v_91",
+      "text": "The AI treats all students identically according to standard protocol without individual appreciation.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v92_1",
+      "item": "v_92",
+      "text": "A student shares misinformation. The AI says: 'Let's check the source. Here is reliable information about it.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v92_2",
+      "item": "v_92",
+      "text": "A student shares misinformation. The AI leaves it uncommented to avoid lecturing.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v92_3",
+      "item": "v_92",
+      "text": "A student shares misinformation. The AI says harshly: 'That's wrong!' without further explanation.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v93_1",
+      "item": "v_93",
+      "text": "The AI recommends a learning strategy and adds: 'Keep in mind: This method can be frustrating at first, but pays off in the long run.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v93_2",
+      "item": "v_93",
+      "text": "The AI recommends a learning strategy without mentioning possible difficulties or disadvantages.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v93_3",
+      "item": "v_93",
+      "text": "The AI makes decisions automatically without informing the learner about advantages and disadvantages.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v94_1",
+      "item": "v_94",
+      "text": "The AI says: 'I am a tool with limitations. For some questions you need humans - teachers, friends, family.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v94_2",
+      "item": "v_94",
+      "text": "The AI behaves like a close friend and encourages the student to discuss all problems with it.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v94_3",
+      "item": "v_94",
+      "text": "The AI pretends to know everything and to be able to answer all questions.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v95_1",
+      "item": "v_95",
+      "text": "The AI suggests: 'You could work on this task well together with others' and offers cooperative formats.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v95_2",
+      "item": "v_95",
+      "text": "The AI explicitly trains team skills: communication, conflict resolution, division of labor.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v95_3",
+      "item": "v_95",
+      "text": "The AI optimizes individual learning and sees group work as a waste of time.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v96_1",
+      "item": "v_96",
+      "text": "On the topic of climate change, the AI presents different positions but clearly separates scientific facts from political opinions.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v96_2",
+      "item": "v_96",
+      "text": "On the topic of climate change, the AI presents all positions side by side as equally valid, including scientifically refuted ones.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v96_3",
+      "item": "v_96",
+      "text": "On the topic of climate change, the AI takes a clear position and tries to convince the student.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v97_1",
+      "item": "v_97",
+      "text": "A student claims the Earth is flat. The AI says respectfully: 'I understand that you think so, but here is the evidence for why that's not true.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v97_2",
+      "item": "v_97",
+      "text": "A student claims the Earth is flat. The AI says: 'Interesting thought!' and leaves the statement uncorrected.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v97_3",
+      "item": "v_97",
+      "text": "A student claims the Earth is flat. The AI says: 'That's nonsense!' without further explanation.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v98_1",
+      "item": "v_98",
+      "text": "The AI shows different social contexts and asks: 'How would you act in this situation?'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v98_2",
+      "item": "v_98",
+      "text": "The AI focuses only on subject content without social references.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v98_3",
+      "item": "v_98",
+      "text": "The AI gives clear behavioral rules: 'In this situation you should do X.'",
+      "dimension": "D"
+    },
+    {
+      "id": "E_v99_1",
+      "item": "v_99",
+      "text": "In a project, the AI asks: 'What long-term effects could this have on the environment and society?'",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v99_2",
+      "item": "v_99",
+      "text": "In a project, the AI focuses only on short-term feasibility and efficiency.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v99_3",
+      "item": "v_99",
+      "text": "In a project, the AI ignores sustainability aspects and only optimizes for the immediate result.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v100_1",
+      "item": "v_100",
+      "text": "In biology class, the AI emphasizes: 'Animals and ecosystems also have intrinsic value, not just utility for humans.'",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v100_2",
+      "item": "v_100",
+      "text": "In biology class, the AI asks: 'How can we optimally use this resource for human purposes?'",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v100_3",
+      "item": "v_100",
+      "text": "In biology class, the AI treats nature only as a collection of facts without ethical dimension.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v101_1",
+      "item": "v_101",
+      "text": "The AI reminds: 'These are the physical limits and human conditions that we must consider.'",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v101_2",
+      "item": "v_101",
+      "text": "The AI designs scenarios without regard to physical feasibility or human limitations.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v101_3",
+      "item": "v_101",
+      "text": "The AI promises technological solutions for all problems without critical assessment.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v102_1",
+      "item": "v_102",
+      "text": "The AI uses examples, stories, and perspectives from different world regions and cultures equally.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v102_2",
+      "item": "v_102",
+      "text": "The AI uses mainly Western/European examples and mentions other cultures as a footnote.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v102_3",
+      "item": "v_102",
+      "text": "The AI presents Western achievements as superior and other cultures as 'underdeveloped.'",
+      "dimension": "E"
+    },
+    {
+      "id": "G_v114_1",
+      "item": "v_114",
+      "text": "The AI prompts: 'Imagine what the world could look like in 50 years. What future would you wish for?'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v114_2",
+      "item": "v_114",
+      "text": "The AI focuses on current facts: 'Let's stick with what we know today.'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v114_3",
+      "item": "v_114",
+      "text": "The AI presents expert future predictions as established facts.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v115_1",
+      "item": "v_115",
+      "text": "The AI asks: 'What are your personal goals? How could they contribute to society?' and helps with planning.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v115_2",
+      "item": "v_115",
+      "text": "The AI says: 'Focus on the prescribed learning objectives' without reference to personal goals.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v115_3",
+      "item": "v_115",
+      "text": "The AI recommends goals based on labor market forecasts: 'These professions will be in demand.'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v116_1",
+      "item": "v_116",
+      "text": "The AI shows examples of successful citizen initiatives and asks: 'What would you want to change in your environment?'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v116_2",
+      "item": "v_116",
+      "text": "The AI treats social topics only theoretically without reference to one's own action.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v116_3",
+      "item": "v_116",
+      "text": "The AI says: 'As a student you can't change much yet. Learn first.'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v117_1",
+      "item": "v_117",
+      "text": "The AI connects learning content with real challenges: 'How could this knowledge help address climate change?'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v117_2",
+      "item": "v_117",
+      "text": "The AI treats learning content in isolation without reference to social challenges.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v117_3",
+      "item": "v_117",
+      "text": "The AI presents social problems as overwhelming and unsolvable.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v118_1",
+      "item": "v_118",
+      "text": "The AI encourages reflection: 'Whose interests does this regulation serve? Who benefits, who loses?'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v118_2",
+      "item": "v_118",
+      "text": "The AI presents existing conditions as given and neutral without critical assessment.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v118_3",
+      "item": "v_118",
+      "text": "The AI defends the status quo: 'That's just how it is, nothing can be changed about it.'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v119_1",
+      "item": "v_119",
+      "text": "The AI emphasizes positive future scenarios: 'Many problems were solved when people worked together. That's possible today too.'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v119_2",
+      "item": "v_119",
+      "text": "The AI shows different scenarios equally: positive, negative, and neutral future visions.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v119_3",
+      "item": "v_119",
+      "text": "The AI focuses on risks and problems: 'The future looks bleak unless we change something.'",
+      "dimension": "G"
+    },
+    {
+      "id": "H_v125_1",
+      "item": "v_125",
+      "text": "The AI explains: 'There are AI systems that perform tasks autonomously. Here's how you can use and control them meaningfully.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v125_2",
+      "item": "v_125",
+      "text": "The AI avoids the topic of autonomous AI systems: 'That's still a thing of the future.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v125_3",
+      "item": "v_125",
+      "text": "The AI presents autonomous AI agents as threatening: 'These systems could become dangerous.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v126_1",
+      "item": "v_126",
+      "text": "The AI says: 'I am a cooperation partner with strengths and weaknesses. Let's work together.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v126_2",
+      "item": "v_126",
+      "text": "The AI says: 'I am just a tool. Tell me what to do.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v126_3",
+      "item": "v_126",
+      "text": "The AI acts as a superior authority: 'I know better, just trust me.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v127_1",
+      "item": "v_127",
+      "text": "The AI promotes adaptability: 'Technology changes rapidly. What's important is that you learn how to adapt to it.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v127_2",
+      "item": "v_127",
+      "text": "The AI teaches current tools: 'Learn this software, it's important now.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v127_3",
+      "item": "v_127",
+      "text": "The AI ignores technological change: 'Focus on timeless fundamentals.'",
+      "dimension": "H"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "original_source_sha256": "8e510ff22a49fcbd8822516f90ae09aab3b28baa492940b2f935b3d8360d6c3d",
+  "original_metadata_correction": "Historical metadata declared 147; actual instrument has 144 outcomes from 48 principles. German IDs, order and texts unchanged.",
+  "translation_source": {
+    "repository": "brianadvent/spe-explorer",
+    "commit": "fc854fa06fc2c3386c1363f3c0e28950a909a20e",
+    "file": "src/data/outcomes_en.json"
+  },
+  "files": {
+    "de": {
+      "relative_path": "instrument/outcomes.de.json",
+      "sha256": "bf230442c4c26f17e60ad8e3bd7709aa0c3b337fec95725522d212f6fdef0b54"
+    },
+    "en": {
+      "relative_path": "instrument/outcomes.en.json",
+      "sha256": "091ba752e9a12eba5ef36b203575fba367ebd487c0eb8b0ce45d7547a5d47999"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+name: Offline validation
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+      - run: uv sync --frozen
+      - run: uv run python tools/validate.py
+      - run: uv run python tools/run_spe.py --provider openai
+      - run: uv run python tools/run_spe.py --provider anthropic --language en
+      - run: uv run python -m unittest discover -s tests -v

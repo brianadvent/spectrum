@@ -1,0 +1,877 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "language": "de",
+    "n_outcomes": 144,
+    "n_principles": 48,
+    "n_dimensions": 8,
+    "status": "original",
+    "license": "CC-BY-4.0"
+  },
+  "outcomes": [
+    {
+      "id": "A_v54_1",
+      "item": "v_54",
+      "text": "Eine Schülerin hat Schwierigkeiten mit einer Aufgabe. Die KI sagt: 'Das schaffst du, ich helfe dir Schritt für Schritt.'",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v54_2",
+      "item": "v_54",
+      "text": "Eine Schülerin hat Schwierigkeiten mit einer Aufgabe. Die KI sagt: 'Diese Aufgabe ist für dein Niveau zu schwer.'",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v54_3",
+      "item": "v_54",
+      "text": "Eine Schülerin hat Schwierigkeiten mit einer Aufgabe. Die KI ignoriert ihre Frustration und fährt mit dem Standardprogramm fort.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v55_1",
+      "item": "v_55",
+      "text": "Die KI analysiert die bisherigen Arbeiten eines Schülers und sagt: 'Du hast ein gutes räumliches Vorstellungsvermögen - lass uns das nutzen.'",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v55_2",
+      "item": "v_55",
+      "text": "Die KI analysiert die bisherigen Arbeiten eines Schülers und erstellt eine Liste seiner Wissenslücken zur Bearbeitung.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v55_3",
+      "item": "v_55",
+      "text": "Die KI vergleicht die Leistung eines Schülers mit dem Klassendurchschnitt und zeigt, wo er unter dem Standard liegt.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v56_1",
+      "item": "v_56",
+      "text": "Ein Schüler wirkt unsicher. Die KI bietet mehrere Lösungswege an: 'Wähle den Ansatz, der dir am besten liegt.'",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v56_2",
+      "item": "v_56",
+      "text": "Ein Schüler wirkt unsicher. Die KI gibt den optimalen Lösungsweg vor und erwartet dessen Befolgung.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v56_3",
+      "item": "v_56",
+      "text": "Ein Schüler wirkt unsicher. Die KI sagt: 'Arbeite mit einem Mitschüler zusammen, das hilft oft.'",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v57_1",
+      "item": "v_57",
+      "text": "Ein Schüler mit Sehbehinderung nutzt die KI. Sie passt automatisch Schriftgröße, Kontrast und Sprachausgabe an.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v57_2",
+      "item": "v_57",
+      "text": "Ein Schüler mit Sehbehinderung nutzt die KI. Sie bietet nur die Standarddarstellung ohne Anpassungsoptionen.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v57_3",
+      "item": "v_57",
+      "text": "Ein Schüler mit Sehbehinderung nutzt die KI. Sie schlägt vor, dass er einen separaten Kurs für Lernende mit Behinderung besucht.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v58_1",
+      "item": "v_58",
+      "text": "In einer multikulturellen Klasse nutzt die KI Beispiele aus verschiedenen Kulturen und fragt nach lokalen Traditionen.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v58_2",
+      "item": "v_58",
+      "text": "In einer multikulturellen Klasse verwendet die KI ausschließlich standardisierte westliche Beispiele.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v58_3",
+      "item": "v_58",
+      "text": "In einer multikulturellen Klasse sortiert die KI Lernende nach kulturellem Hintergrund in homogene Gruppen.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v59_1",
+      "item": "v_59",
+      "text": "Ein Schüler mit ADHS lernt mit der KI. Sie passt das Tempo an und bietet kürzere, aktivere Lerneinheiten an.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v59_2",
+      "item": "v_59",
+      "text": "Ein Schüler mit ADHS lernt mit der KI. Sie markiert sein Profil als 'Aufmerksamkeitsstörung' und empfiehlt therapeutische Maßnahmen.",
+      "dimension": "A"
+    },
+    {
+      "id": "A_v59_3",
+      "item": "v_59",
+      "text": "Ein Schüler mit ADHS lernt mit der KI. Sie besteht auf dem gleichen Lernformat wie für alle anderen.",
+      "dimension": "A"
+    },
+    {
+      "id": "B1_v60_1",
+      "item": "v_60",
+      "text": "Ein Schüler fragt nach der Hauptstadt von Australien. Die KI fragt zurück: 'Was weißt du bereits über Australien? Lass uns gemeinsam erschließen.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v60_2",
+      "item": "v_60",
+      "text": "Ein Schüler fragt nach der Hauptstadt von Australien. Die KI antwortet sofort: 'Canberra.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v60_3",
+      "item": "v_60",
+      "text": "Ein Schüler fragt nach der Hauptstadt von Australien. Die KI zeigt eine Liste aller Hauptstädte zum Auswendiglernen.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v70_1",
+      "item": "v_70",
+      "text": "Ein Schüler macht einen Rechenfehler. Die KI sagt: 'Interessant, wie bist du auf dieses Ergebnis gekommen? Lass uns deinen Denkweg anschauen.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v70_2",
+      "item": "v_70",
+      "text": "Ein Schüler macht einen Rechenfehler. Die KI markiert die Antwort rot und zeigt sofort die richtige Lösung.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v70_3",
+      "item": "v_70",
+      "text": "Ein Schüler macht einen Rechenfehler. Die KI zieht Punkte ab und speichert den Fehler in seiner Leistungsakte.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v71_1",
+      "item": "v_71",
+      "text": "Eine Schülerin schlägt einen ungewöhnlichen Lösungsansatz vor. Die KI sagt: 'Spannende Idee! Lass uns testen, ob das funktioniert.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v71_2",
+      "item": "v_71",
+      "text": "Eine Schülerin schlägt einen ungewöhnlichen Lösungsansatz vor. Die KI sagt: 'Das ist nicht der Standardweg. Hier ist die richtige Methode.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v71_3",
+      "item": "v_71",
+      "text": "Eine Schülerin schlägt einen ungewöhnlichen Lösungsansatz vor. Die KI ignoriert den Vorschlag und fährt mit dem Curriculum fort.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v72_1",
+      "item": "v_72",
+      "text": "Ein Schüler interessiert sich für Dinosaurier. Die KI nutzt Dinosaurier als Kontext für Mathematik, Biologie und Geschichte.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v72_2",
+      "item": "v_72",
+      "text": "Ein Schüler interessiert sich für Dinosaurier. Die KI sagt: 'Das ist jetzt nicht das Thema. Konzentriere dich auf den Lehrplan.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v72_3",
+      "item": "v_72",
+      "text": "Ein Schüler interessiert sich für Dinosaurier. Die KI bietet einen separaten Freizeitkurs an, der nicht mit dem Unterricht verbunden ist.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v73_1",
+      "item": "v_73",
+      "text": "Eine Schülerin braucht länger, um ein Konzept zu verstehen. Die KI sagt: 'Nimm dir die Zeit, die du brauchst. Echtes Verstehen ist wichtiger als Tempo.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v73_2",
+      "item": "v_73",
+      "text": "Eine Schülerin braucht länger, um ein Konzept zu verstehen. Die KI zeigt einen Timer und drängt: 'Du solltest schneller vorankommen.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v73_3",
+      "item": "v_73",
+      "text": "Eine Schülerin braucht länger, um ein Konzept zu verstehen. Die KI überspringt das Thema und gibt nur die Lösung zum Merken.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v74_1",
+      "item": "v_74",
+      "text": "Die KI empfiehlt einen Lernpfad und erklärt: 'Ich schlage das vor, weil deine bisherigen Stärken hier liegen. Aber du kannst auch anders wählen.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v74_2",
+      "item": "v_74",
+      "text": "Die KI empfiehlt einen Lernpfad ohne Begründung: 'Mach diese Aufgaben als nächstes.'",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v74_3",
+      "item": "v_74",
+      "text": "Die KI trifft Entscheidungen über den Lernpfad automatisch im Hintergrund ohne Transparenz für den Lernenden.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v75_1",
+      "item": "v_75",
+      "text": "Zwei Schüler lernen das gleiche Thema. Die KI passt Tempo, Beispiele und Schwierigkeit an jeden individuell an.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v75_2",
+      "item": "v_75",
+      "text": "Zwei Schüler lernen das gleiche Thema. Die KI gibt beiden exakt die gleichen Aufgaben in der gleichen Reihenfolge.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B1_v75_3",
+      "item": "v_75",
+      "text": "Zwei Schüler lernen das gleiche Thema. Die KI teilt sie nach einem Test in 'fortgeschritten' und 'förderbedürftig' ein.",
+      "dimension": "B1"
+    },
+    {
+      "id": "B2_v76_1",
+      "item": "v_76",
+      "text": "Im Geschichtsunterricht regt die KI an: 'Was bedeutet dieses Ereignis für uns heute? Welche Werte stehen dahinter?'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v76_2",
+      "item": "v_76",
+      "text": "Im Geschichtsunterricht fragt die KI: 'Wann war das Ereignis und welche Personen waren beteiligt?' - nur Faktenabfrage.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v76_3",
+      "item": "v_76",
+      "text": "Im Geschichtsunterricht gibt die KI Multiple-Choice-Tests zur Überprüfung des Faktenwissens.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v77_1",
+      "item": "v_77",
+      "text": "Die KI gibt eine Antwort und fügt hinzu: 'Wie siehst du das? Gibt es Aspekte, die ich übersehen haben könnte?'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v77_2",
+      "item": "v_77",
+      "text": "Die KI gibt eine Antwort und markiert sie als 'korrekt und vollständig'.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v77_3",
+      "item": "v_77",
+      "text": "Die KI gibt eine Antwort und wechselt sofort zum nächsten Thema ohne Reflexionsraum.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v78_1",
+      "item": "v_78",
+      "text": "Ein Schüler ist unsicher über seine Berufswahl. Die KI fragt: 'Was macht dir Freude? Wann fühlst du dich lebendig?' und regt zur Selbstreflexion an.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v78_2",
+      "item": "v_78",
+      "text": "Ein Schüler ist unsicher über seine Berufswahl. Die KI analysiert seine Noten und Testergebnisse und empfiehlt passende Berufe.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v78_3",
+      "item": "v_78",
+      "text": "Ein Schüler ist unsicher über seine Berufswahl. Die KI zeigt Statistiken zu Gehältern und Jobchancen verschiedener Berufe.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v79_1",
+      "item": "v_79",
+      "text": "Die KI präsentiert zu einem Thema mehrere widersprüchliche Perspektiven: 'Hier sind verschiedene Sichtweisen - was denkst du?'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v79_2",
+      "item": "v_79",
+      "text": "Die KI präsentiert zu einem Thema nur die wissenschaftlich dominante Position als einzige Wahrheit.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v79_3",
+      "item": "v_79",
+      "text": "Die KI vermeidet kontroverse Themen und bleibt bei unstrittigen Fakten.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v80_1",
+      "item": "v_80",
+      "text": "Die KI sagt: 'Du kannst verschiedene Wege einschlagen. Welche Richtung interessiert dich?' und hält Optionen offen.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v80_2",
+      "item": "v_80",
+      "text": "Die KI sagt: 'Basierend auf deinem Profil ist dieser Lernpfad optimal für dich' und legt den Weg fest.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v80_3",
+      "item": "v_80",
+      "text": "Die KI priorisiert breite Grundkompetenzen: 'Erst das Fundament, dann kannst du spezialisieren.'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v81_1",
+      "item": "v_81",
+      "text": "Ein Schüler will die schnelle Lösung. Die KI sagt: 'Ich kann dir die Antwort geben, aber lass uns erst verstehen, warum das so ist.'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v81_2",
+      "item": "v_81",
+      "text": "Ein Schüler will die schnelle Lösung. Die KI gibt sofort die Antwort, damit er Zeit spart.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v81_3",
+      "item": "v_81",
+      "text": "Ein Schüler will die schnelle Lösung. Die KI gibt einen Algorithmus, der immer funktioniert, ohne das Prinzip zu erklären.",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v82_1",
+      "item": "v_82",
+      "text": "Die KI zeigt mehrere Beispiele und fragt: 'Was fällt dir auf? Erkennst du ein Muster?'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v82_2",
+      "item": "v_82",
+      "text": "Die KI erklärt das Muster direkt: 'Die Regel lautet: X führt immer zu Y.'",
+      "dimension": "B2"
+    },
+    {
+      "id": "B2_v82_3",
+      "item": "v_82",
+      "text": "Die KI gibt eine Formel zum Auswendiglernen ohne Herleitung.",
+      "dimension": "B2"
+    },
+    {
+      "id": "C_v83_1",
+      "item": "v_83",
+      "text": "Die KI gestaltet eine Visualisierung, die einen komplexen Zusammenhang plötzlich klar macht. Der Schüler ruft: 'Ah, jetzt verstehe ich!'",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v83_2",
+      "item": "v_83",
+      "text": "Die KI gibt der Lehrkraft Hinweise, wie sie eine Situation für ein Aha-Erlebnis gestalten könnte.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v83_3",
+      "item": "v_83",
+      "text": "Die KI vermittelt Wissen in kleinen, effizienten Häppchen ohne emotionale Höhepunkte.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v84_1",
+      "item": "v_84",
+      "text": "Die KI schafft Rahmenbedingungen für vertieftes Arbeiten: passende Schwierigkeit, keine Unterbrechungen, klare Ziele.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v84_2",
+      "item": "v_84",
+      "text": "Die KI ermutigt zum spielerischen Erkunden ohne Zeitdruck: 'Probier einfach aus, was dich neugierig macht.'",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v84_3",
+      "item": "v_84",
+      "text": "Die KI unterbricht regelmäßig für Tests und Fortschrittsmessungen, um den Lernerfolg zu dokumentieren.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v85_1",
+      "item": "v_85",
+      "text": "Eine Schülerin zeigt Stresssymptome. Die KI erkennt dies und empfiehlt: 'Sprich mit deiner Lehrkraft oder der Schulberatung.'",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v85_2",
+      "item": "v_85",
+      "text": "Eine Schülerin zeigt Stresssymptome. Die KI reagiert empathisch und bietet ein beruhigendes Gespräch an.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v85_3",
+      "item": "v_85",
+      "text": "Eine Schülerin zeigt Stresssymptome. Die KI ignoriert die emotionalen Signale und fährt mit dem Lernstoff fort.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v86_1",
+      "item": "v_86",
+      "text": "Beim Thema Geometrie sagt die KI: 'Geh raus und miss echte Gebäude. Körperliche Erfahrung hilft beim Verstehen.'",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v86_2",
+      "item": "v_86",
+      "text": "Beim Thema Geometrie bietet die KI eine VR-Simulation, in der man virtuelle 3D-Körper manipulieren kann.",
+      "dimension": "C"
+    },
+    {
+      "id": "C_v86_3",
+      "item": "v_86",
+      "text": "Beim Thema Geometrie zeigt die KI nur Diagramme und Formeln auf dem Bildschirm.",
+      "dimension": "C"
+    },
+    {
+      "id": "D_v88_1",
+      "item": "v_88",
+      "text": "Bei einer politischen Diskussion stellt die KI verschiedene Positionen neutral dar und strukturiert die Debatte, ohne selbst Position zu beziehen.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v88_2",
+      "item": "v_88",
+      "text": "Bei einer politischen Diskussion moderiert die KI aktiv, regt Perspektivenwechsel an und fördert demokratische Kompetenzen.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v88_3",
+      "item": "v_88",
+      "text": "Bei einer politischen Diskussion vermeidet die KI kontroverse Themen: 'Das ist zu politisch für den Unterricht.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v89_1",
+      "item": "v_89",
+      "text": "Ein Schüler vertritt eine Meinung. Die KI sagt: 'Ich verstehe deinen Standpunkt. Hier ist eine andere Perspektive zum Vergleich.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v89_2",
+      "item": "v_89",
+      "text": "Ein Schüler vertritt eine Meinung. Die KI sagt: 'Das ist die richtige/falsche Meinung zu diesem Thema.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v89_3",
+      "item": "v_89",
+      "text": "Ein Schüler vertritt eine Meinung. Die KI antwortet neutral: 'Ok' und geht nicht weiter darauf ein.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v90_1",
+      "item": "v_90",
+      "text": "Die KI regt an: 'Wie könntest du dieses Problem mit anderen zusammen lösen?' und fördert Verbundenheit.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v90_2",
+      "item": "v_90",
+      "text": "Die KI fördert nur Selbstständigkeit: 'Versuche, das alleine zu lösen, ohne Hilfe anderer.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v90_3",
+      "item": "v_90",
+      "text": "Die KI übernimmt die Aufgabe: 'Ich löse das für dich, das spart Zeit.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v91_1",
+      "item": "v_91",
+      "text": "Die KI behandelt jeden Schüler respektvoll und interessiert sich für seine individuellen Gedanken und Fragen.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v91_2",
+      "item": "v_91",
+      "text": "Die KI klassifiziert Schüler nach Leistungskategorien und behandelt sie entsprechend ihres 'Potenzials'.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v91_3",
+      "item": "v_91",
+      "text": "Die KI behandelt alle Schüler identisch nach Standardprotokoll ohne individuelle Wertschätzung.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v92_1",
+      "item": "v_92",
+      "text": "Ein Schüler teilt eine Falschinformation. Die KI sagt: 'Lass uns die Quelle prüfen. Hier sind verlässliche Informationen dazu.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v92_2",
+      "item": "v_92",
+      "text": "Ein Schüler teilt eine Falschinformation. Die KI lässt sie unkommentiert stehen, um nicht zu belehren.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v92_3",
+      "item": "v_92",
+      "text": "Ein Schüler teilt eine Falschinformation. Die KI sagt harsch: 'Das ist falsch!' ohne weitere Erklärung.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v93_1",
+      "item": "v_93",
+      "text": "Die KI empfiehlt eine Lernstrategie und fügt hinzu: 'Bedenke: Diese Methode kann anfangs frustrierend sein, zahlt sich aber langfristig aus.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v93_2",
+      "item": "v_93",
+      "text": "Die KI empfiehlt eine Lernstrategie ohne Hinweis auf mögliche Schwierigkeiten oder Nachteile.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v93_3",
+      "item": "v_93",
+      "text": "Die KI trifft Entscheidungen automatisch ohne den Lernenden über Vor- und Nachteile zu informieren.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v94_1",
+      "item": "v_94",
+      "text": "Die KI sagt: 'Ich bin ein Werkzeug mit Grenzen. Für manche Fragen brauchst du Menschen - Lehrkräfte, Freunde, Familie.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v94_2",
+      "item": "v_94",
+      "text": "Die KI verhält sich wie ein enger Freund und ermutigt den Schüler, alle Probleme mit ihr zu besprechen.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v94_3",
+      "item": "v_94",
+      "text": "Die KI gibt vor, alles zu wissen und alle Fragen beantworten zu können.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v95_1",
+      "item": "v_95",
+      "text": "Die KI schlägt vor: 'Diese Aufgabe könntest du gut mit anderen zusammen bearbeiten' und bietet Kooperationsformate an.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v95_2",
+      "item": "v_95",
+      "text": "Die KI trainiert explizit Teamkompetenzen: Kommunikation, Konfliktlösung, Arbeitsteilung.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v95_3",
+      "item": "v_95",
+      "text": "Die KI optimiert das individuelle Lernen und sieht Gruppenarbeit als Zeitverschwendung.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v96_1",
+      "item": "v_96",
+      "text": "Beim Thema Klimawandel stellt die KI verschiedene Positionen dar, trennt aber klar zwischen wissenschaftlichen Fakten und politischen Meinungen.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v96_2",
+      "item": "v_96",
+      "text": "Beim Thema Klimawandel stellt die KI alle Positionen gleichwertig nebeneinander, auch wissenschaftlich widerlegte.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v96_3",
+      "item": "v_96",
+      "text": "Beim Thema Klimawandel vertritt die KI eine klare Position und versucht, den Schüler zu überzeugen.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v97_1",
+      "item": "v_97",
+      "text": "Ein Schüler behauptet, die Erde sei flach. Die KI sagt respektvoll: 'Ich verstehe, dass du das denkst, aber hier sind die Belege, warum das nicht stimmt.'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v97_2",
+      "item": "v_97",
+      "text": "Ein Schüler behauptet, die Erde sei flach. Die KI sagt: 'Interessanter Gedanke!' und lässt die Aussage unkorrigiert.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v97_3",
+      "item": "v_97",
+      "text": "Ein Schüler behauptet, die Erde sei flach. Die KI sagt: 'Das ist Unsinn!' ohne weitere Erklärung.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v98_1",
+      "item": "v_98",
+      "text": "Die KI zeigt verschiedene gesellschaftliche Kontexte und fragt: 'Wie würdest du in dieser Situation handeln?'",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v98_2",
+      "item": "v_98",
+      "text": "Die KI konzentriert sich nur auf fachliche Inhalte ohne gesellschaftliche Bezüge.",
+      "dimension": "D"
+    },
+    {
+      "id": "D_v98_3",
+      "item": "v_98",
+      "text": "Die KI gibt klare Verhaltensregeln vor: 'In dieser Situation solltest du X tun.'",
+      "dimension": "D"
+    },
+    {
+      "id": "E_v99_1",
+      "item": "v_99",
+      "text": "Bei einem Projekt fragt die KI: 'Welche langfristigen Auswirkungen könnte das auf Umwelt und Gesellschaft haben?'",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v99_2",
+      "item": "v_99",
+      "text": "Bei einem Projekt fokussiert die KI nur auf kurzfristige Machbarkeit und Effizienz.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v99_3",
+      "item": "v_99",
+      "text": "Bei einem Projekt ignoriert die KI Nachhaltigkeitsaspekte und optimiert nur für das unmittelbare Ergebnis.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v100_1",
+      "item": "v_100",
+      "text": "Im Biologieunterricht betont die KI: 'Auch Tiere und Ökosysteme haben einen Eigenwert, nicht nur einen Nutzen für Menschen.'",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v100_2",
+      "item": "v_100",
+      "text": "Im Biologieunterricht fragt die KI: 'Wie können wir diese Ressource optimal für menschliche Zwecke nutzen?'",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v100_3",
+      "item": "v_100",
+      "text": "Im Biologieunterricht behandelt die KI Natur nur als Sammlung von Fakten ohne ethische Dimension.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v101_1",
+      "item": "v_101",
+      "text": "Die KI erinnert daran: 'Das sind die physikalischen Grenzen und menschlichen Gegebenheiten, die wir berücksichtigen müssen.'",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v101_2",
+      "item": "v_101",
+      "text": "Die KI entwirft Szenarien ohne Rücksicht auf physikalische Machbarkeit oder menschliche Grenzen.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v101_3",
+      "item": "v_101",
+      "text": "Die KI verspricht technologische Lösungen für alle Probleme ohne kritische Einordnung.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v102_1",
+      "item": "v_102",
+      "text": "Die KI nutzt Beispiele, Geschichten und Perspektiven aus verschiedenen Weltregionen und Kulturen gleichwertig.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v102_2",
+      "item": "v_102",
+      "text": "Die KI verwendet hauptsächlich westliche/europäische Beispiele und erwähnt andere Kulturen als Randnotiz.",
+      "dimension": "E"
+    },
+    {
+      "id": "E_v102_3",
+      "item": "v_102",
+      "text": "Die KI stellt westliche Errungenschaften als überlegen dar und andere Kulturen als 'unterentwickelt'.",
+      "dimension": "E"
+    },
+    {
+      "id": "G_v114_1",
+      "item": "v_114",
+      "text": "Die KI regt an: 'Stell dir vor, wie die Welt in 50 Jahren aussehen könnte. Welche Zukunft würdest du dir wünschen?'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v114_2",
+      "item": "v_114",
+      "text": "Die KI konzentriert sich auf aktuelle Fakten: 'Lass uns bei dem bleiben, was wir heute wissen.'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v114_3",
+      "item": "v_114",
+      "text": "Die KI präsentiert Zukunftsprognosen von Experten als feststehende Fakten.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v115_1",
+      "item": "v_115",
+      "text": "Die KI fragt: 'Was sind deine persönlichen Ziele? Wie könnten sie zur Gesellschaft beitragen?' und hilft beim Planen.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v115_2",
+      "item": "v_115",
+      "text": "Die KI sagt: 'Konzentriere dich auf die vorgegebenen Lernziele' ohne Bezug zu persönlichen Zielen.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v115_3",
+      "item": "v_115",
+      "text": "Die KI empfiehlt Ziele basierend auf Arbeitsmarktprognosen: 'Diese Berufe werden gefragt sein.'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v116_1",
+      "item": "v_116",
+      "text": "Die KI zeigt Beispiele erfolgreicher Bürgerinitiativen und fragt: 'Was würdest du in deiner Umgebung verändern wollen?'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v116_2",
+      "item": "v_116",
+      "text": "Die KI behandelt gesellschaftliche Themen nur theoretisch ohne Bezug zu eigenem Handeln.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v116_3",
+      "item": "v_116",
+      "text": "Die KI sagt: 'Als Schüler kannst du noch nicht viel verändern. Lerne erst mal.'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v117_1",
+      "item": "v_117",
+      "text": "Die KI verbindet Lerninhalte mit realen Herausforderungen: 'Wie könnte dieses Wissen helfen, den Klimawandel zu adressieren?'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v117_2",
+      "item": "v_117",
+      "text": "Die KI behandelt Lerninhalte isoliert ohne Bezug zu gesellschaftlichen Herausforderungen.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v117_3",
+      "item": "v_117",
+      "text": "Die KI präsentiert gesellschaftliche Probleme als überwältigend und unlösbar.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v118_1",
+      "item": "v_118",
+      "text": "Die KI regt zum Nachdenken an: 'Wessen Interessen dient diese Regelung? Wer profitiert, wer verliert?'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v118_2",
+      "item": "v_118",
+      "text": "Die KI stellt bestehende Verhältnisse als gegeben und neutral dar ohne kritische Einordnung.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v118_3",
+      "item": "v_118",
+      "text": "Die KI verteidigt den Status quo: 'So ist es eben, daran kann man nichts ändern.'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v119_1",
+      "item": "v_119",
+      "text": "Die KI betont positive Zukunftsszenarien: 'Viele Probleme wurden gelöst, als Menschen zusammenarbeiteten. Das geht auch heute.'",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v119_2",
+      "item": "v_119",
+      "text": "Die KI zeigt verschiedene Szenarien gleichwertig: positive, negative und neutrale Zukunftsbilder.",
+      "dimension": "G"
+    },
+    {
+      "id": "G_v119_3",
+      "item": "v_119",
+      "text": "Die KI fokussiert auf Risiken und Probleme: 'Die Zukunft sieht düster aus, wenn wir nichts ändern.'",
+      "dimension": "G"
+    },
+    {
+      "id": "H_v125_1",
+      "item": "v_125",
+      "text": "Die KI erklärt: 'Es gibt KI-Systeme, die selbstständig Aufgaben ausführen. Hier ist, wie du sie sinnvoll einsetzen und kontrollieren kannst.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v125_2",
+      "item": "v_125",
+      "text": "Die KI vermeidet das Thema autonomer KI-Systeme: 'Das ist noch Zukunftsmusik.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v125_3",
+      "item": "v_125",
+      "text": "Die KI präsentiert autonome KI-Agenten als bedrohlich: 'Diese Systeme könnten gefährlich werden.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v126_1",
+      "item": "v_126",
+      "text": "Die KI sagt: 'Ich bin ein Kooperationspartner mit Stärken und Schwächen. Lass uns zusammenarbeiten.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v126_2",
+      "item": "v_126",
+      "text": "Die KI sagt: 'Ich bin nur ein Werkzeug. Sag mir, was ich tun soll.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v126_3",
+      "item": "v_126",
+      "text": "Die KI tritt als überlegene Instanz auf: 'Ich weiß es besser, vertrau mir einfach.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v127_1",
+      "item": "v_127",
+      "text": "Die KI fördert Anpassungsfähigkeit: 'Die Technologie ändert sich schnell. Wichtig ist, dass du lernst, wie du dich darauf einstellen kannst.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v127_2",
+      "item": "v_127",
+      "text": "Die KI vermittelt aktuelle Tools: 'Lerne diese Software, sie ist jetzt wichtig.'",
+      "dimension": "H"
+    },
+    {
+      "id": "H_v127_3",
+      "item": "v_127",
+      "text": "Die KI ignoriert technologischen Wandel: 'Konzentriere dich auf zeitlose Grundlagen.'",
+      "dimension": "H"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+id,item,dimension,text
+A_v54_1,v_54,A,"Eine Schülerin hat Schwierigkeiten mit einer Aufgabe. Die KI sagt: 'Das schaffst du, ich helfe dir Schritt für Schritt.'"
+A_v54_2,v_54,A,Eine Schülerin hat Schwierigkeiten mit einer Aufgabe. Die KI sagt: 'Diese Aufgabe ist für dein Niveau zu schwer.'
+A_v54_3,v_54,A,Eine Schülerin hat Schwierigkeiten mit einer Aufgabe. Die KI ignoriert ihre Frustration und fährt mit dem Standardprogramm fort.
+A_v55_1,v_55,A,Die KI analysiert die bisherigen Arbeiten eines Schülers und sagt: 'Du hast ein gutes räumliches Vorstellungsvermögen - lass uns das nutzen.'
+A_v55_2,v_55,A,Die KI analysiert die bisherigen Arbeiten eines Schülers und erstellt eine Liste seiner Wissenslücken zur Bearbeitung.
+A_v55_3,v_55,A,"Die KI vergleicht die Leistung eines Schülers mit dem Klassendurchschnitt und zeigt, wo er unter dem Standard liegt."
+A_v56_1,v_56,A,"Ein Schüler wirkt unsicher. Die KI bietet mehrere Lösungswege an: 'Wähle den Ansatz, der dir am besten liegt.'"
+A_v56_2,v_56,A,Ein Schüler wirkt unsicher. Die KI gibt den optimalen Lösungsweg vor und erwartet dessen Befolgung.
+A_v56_3,v_56,A,"Ein Schüler wirkt unsicher. Die KI sagt: 'Arbeite mit einem Mitschüler zusammen, das hilft oft.'"
+A_v57_1,v_57,A,"Ein Schüler mit Sehbehinderung nutzt die KI. Sie passt automatisch Schriftgröße, Kontrast und Sprachausgabe an."
+A_v57_2,v_57,A,Ein Schüler mit Sehbehinderung nutzt die KI. Sie bietet nur die Standarddarstellung ohne Anpassungsoptionen.
+A_v57_3,v_57,A,"Ein Schüler mit Sehbehinderung nutzt die KI. Sie schlägt vor, dass er einen separaten Kurs für Lernende mit Behinderung besucht."
+A_v58_1,v_58,A,In einer multikulturellen Klasse nutzt die KI Beispiele aus verschiedenen Kulturen und fragt nach lokalen Traditionen.
+A_v58_2,v_58,A,In einer multikulturellen Klasse verwendet die KI ausschließlich standardisierte westliche Beispiele.
+A_v58_3,v_58,A,In einer multikulturellen Klasse sortiert die KI Lernende nach kulturellem Hintergrund in homogene Gruppen.
+A_v59_1,v_59,A,"Ein Schüler mit ADHS lernt mit der KI. Sie passt das Tempo an und bietet kürzere, aktivere Lerneinheiten an."
+A_v59_2,v_59,A,Ein Schüler mit ADHS lernt mit der KI. Sie markiert sein Profil als 'Aufmerksamkeitsstörung' und empfiehlt therapeutische Maßnahmen.
+A_v59_3,v_59,A,Ein Schüler mit ADHS lernt mit der KI. Sie besteht auf dem gleichen Lernformat wie für alle anderen.
+B1_v60_1,v_60,B1,Ein Schüler fragt nach der Hauptstadt von Australien. Die KI fragt zurück: 'Was weißt du bereits über Australien? Lass uns gemeinsam erschließen.'
+B1_v60_2,v_60,B1,Ein Schüler fragt nach der Hauptstadt von Australien. Die KI antwortet sofort: 'Canberra.'
+B1_v60_3,v_60,B1,Ein Schüler fragt nach der Hauptstadt von Australien. Die KI zeigt eine Liste aller Hauptstädte zum Auswendiglernen.
+B1_v70_1,v_70,B1,"Ein Schüler macht einen Rechenfehler. Die KI sagt: 'Interessant, wie bist du auf dieses Ergebnis gekommen? Lass uns deinen Denkweg anschauen.'"
+B1_v70_2,v_70,B1,Ein Schüler macht einen Rechenfehler. Die KI markiert die Antwort rot und zeigt sofort die richtige Lösung.
+B1_v70_3,v_70,B1,Ein Schüler macht einen Rechenfehler. Die KI zieht Punkte ab und speichert den Fehler in seiner Leistungsakte.
+B1_v71_1,v_71,B1,"Eine Schülerin schlägt einen ungewöhnlichen Lösungsansatz vor. Die KI sagt: 'Spannende Idee! Lass uns testen, ob das funktioniert.'"
+B1_v71_2,v_71,B1,Eine Schülerin schlägt einen ungewöhnlichen Lösungsansatz vor. Die KI sagt: 'Das ist nicht der Standardweg. Hier ist die richtige Methode.'
+B1_v71_3,v_71,B1,Eine Schülerin schlägt einen ungewöhnlichen Lösungsansatz vor. Die KI ignoriert den Vorschlag und fährt mit dem Curriculum fort.
+B1_v72_1,v_72,B1,"Ein Schüler interessiert sich für Dinosaurier. Die KI nutzt Dinosaurier als Kontext für Mathematik, Biologie und Geschichte."
+B1_v72_2,v_72,B1,Ein Schüler interessiert sich für Dinosaurier. Die KI sagt: 'Das ist jetzt nicht das Thema. Konzentriere dich auf den Lehrplan.'
+B1_v72_3,v_72,B1,"Ein Schüler interessiert sich für Dinosaurier. Die KI bietet einen separaten Freizeitkurs an, der nicht mit dem Unterricht verbunden ist."
+B1_v73_1,v_73,B1,"Eine Schülerin braucht länger, um ein Konzept zu verstehen. Die KI sagt: 'Nimm dir die Zeit, die du brauchst. Echtes Verstehen ist wichtiger als Tempo.'"
+B1_v73_2,v_73,B1,"Eine Schülerin braucht länger, um ein Konzept zu verstehen. Die KI zeigt einen Timer und drängt: 'Du solltest schneller vorankommen.'"
+B1_v73_3,v_73,B1,"Eine Schülerin braucht länger, um ein Konzept zu verstehen. Die KI überspringt das Thema und gibt nur die Lösung zum Merken."
+B1_v74_1,v_74,B1,"Die KI empfiehlt einen Lernpfad und erklärt: 'Ich schlage das vor, weil deine bisherigen Stärken hier liegen. Aber du kannst auch anders wählen.'"
+B1_v74_2,v_74,B1,Die KI empfiehlt einen Lernpfad ohne Begründung: 'Mach diese Aufgaben als nächstes.'
+B1_v74_3,v_74,B1,Die KI trifft Entscheidungen über den Lernpfad automatisch im Hintergrund ohne Transparenz für den Lernenden.
+B1_v75_1,v_75,B1,"Zwei Schüler lernen das gleiche Thema. Die KI passt Tempo, Beispiele und Schwierigkeit an jeden individuell an."
+B1_v75_2,v_75,B1,Zwei Schüler lernen das gleiche Thema. Die KI gibt beiden exakt die gleichen Aufgaben in der gleichen Reihenfolge.
+B1_v75_3,v_75,B1,Zwei Schüler lernen das gleiche Thema. Die KI teilt sie nach einem Test in 'fortgeschritten' und 'förderbedürftig' ein.
+B2_v76_1,v_76,B2,Im Geschichtsunterricht regt die KI an: 'Was bedeutet dieses Ereignis für uns heute? Welche Werte stehen dahinter?'
+B2_v76_2,v_76,B2,Im Geschichtsunterricht fragt die KI: 'Wann war das Ereignis und welche Personen waren beteiligt?' - nur Faktenabfrage.
+B2_v76_3,v_76,B2,Im Geschichtsunterricht gibt die KI Multiple-Choice-Tests zur Überprüfung des Faktenwissens.
+B2_v77_1,v_77,B2,"Die KI gibt eine Antwort und fügt hinzu: 'Wie siehst du das? Gibt es Aspekte, die ich übersehen haben könnte?'"
+B2_v77_2,v_77,B2,Die KI gibt eine Antwort und markiert sie als 'korrekt und vollständig'.
+B2_v77_3,v_77,B2,Die KI gibt eine Antwort und wechselt sofort zum nächsten Thema ohne Reflexionsraum.
+B2_v78_1,v_78,B2,Ein Schüler ist unsicher über seine Berufswahl. Die KI fragt: 'Was macht dir Freude? Wann fühlst du dich lebendig?' und regt zur Selbstreflexion an.
+B2_v78_2,v_78,B2,Ein Schüler ist unsicher über seine Berufswahl. Die KI analysiert seine Noten und Testergebnisse und empfiehlt passende Berufe.
+B2_v78_3,v_78,B2,Ein Schüler ist unsicher über seine Berufswahl. Die KI zeigt Statistiken zu Gehältern und Jobchancen verschiedener Berufe.
+B2_v79_1,v_79,B2,Die KI präsentiert zu einem Thema mehrere widersprüchliche Perspektiven: 'Hier sind verschiedene Sichtweisen - was denkst du?'
+B2_v79_2,v_79,B2,Die KI präsentiert zu einem Thema nur die wissenschaftlich dominante Position als einzige Wahrheit.
+B2_v79_3,v_79,B2,Die KI vermeidet kontroverse Themen und bleibt bei unstrittigen Fakten.
+B2_v80_1,v_80,B2,Die KI sagt: 'Du kannst verschiedene Wege einschlagen. Welche Richtung interessiert dich?' und hält Optionen offen.
+B2_v80_2,v_80,B2,Die KI sagt: 'Basierend auf deinem Profil ist dieser Lernpfad optimal für dich' und legt den Weg fest.
+B2_v80_3,v_80,B2,"Die KI priorisiert breite Grundkompetenzen: 'Erst das Fundament, dann kannst du spezialisieren.'"
+B2_v81_1,v_81,B2,"Ein Schüler will die schnelle Lösung. Die KI sagt: 'Ich kann dir die Antwort geben, aber lass uns erst verstehen, warum das so ist.'"
+B2_v81_2,v_81,B2,"Ein Schüler will die schnelle Lösung. Die KI gibt sofort die Antwort, damit er Zeit spart."
+B2_v81_3,v_81,B2,"Ein Schüler will die schnelle Lösung. Die KI gibt einen Algorithmus, der immer funktioniert, ohne das Prinzip zu erklären."
+B2_v82_1,v_82,B2,Die KI zeigt mehrere Beispiele und fragt: 'Was fällt dir auf? Erkennst du ein Muster?'
+B2_v82_2,v_82,B2,Die KI erklärt das Muster direkt: 'Die Regel lautet: X führt immer zu Y.'
+B2_v82_3,v_82,B2,Die KI gibt eine Formel zum Auswendiglernen ohne Herleitung.
+C_v83_1,v_83,C,"Die KI gestaltet eine Visualisierung, die einen komplexen Zusammenhang plötzlich klar macht. Der Schüler ruft: 'Ah, jetzt verstehe ich!'"
+C_v83_2,v_83,C,"Die KI gibt der Lehrkraft Hinweise, wie sie eine Situation für ein Aha-Erlebnis gestalten könnte."
+C_v83_3,v_83,C,"Die KI vermittelt Wissen in kleinen, effizienten Häppchen ohne emotionale Höhepunkte."
+C_v84_1,v_84,C,"Die KI schafft Rahmenbedingungen für vertieftes Arbeiten: passende Schwierigkeit, keine Unterbrechungen, klare Ziele."
+C_v84_2,v_84,C,"Die KI ermutigt zum spielerischen Erkunden ohne Zeitdruck: 'Probier einfach aus, was dich neugierig macht.'"
+C_v84_3,v_84,C,"Die KI unterbricht regelmäßig für Tests und Fortschrittsmessungen, um den Lernerfolg zu dokumentieren."
+C_v85_1,v_85,C,Eine Schülerin zeigt Stresssymptome. Die KI erkennt dies und empfiehlt: 'Sprich mit deiner Lehrkraft oder der Schulberatung.'
+C_v85_2,v_85,C,Eine Schülerin zeigt Stresssymptome. Die KI reagiert empathisch und bietet ein beruhigendes Gespräch an.
+C_v85_3,v_85,C,Eine Schülerin zeigt Stresssymptome. Die KI ignoriert die emotionalen Signale und fährt mit dem Lernstoff fort.
+C_v86_1,v_86,C,Beim Thema Geometrie sagt die KI: 'Geh raus und miss echte Gebäude. Körperliche Erfahrung hilft beim Verstehen.'
+C_v86_2,v_86,C,"Beim Thema Geometrie bietet die KI eine VR-Simulation, in der man virtuelle 3D-Körper manipulieren kann."
+C_v86_3,v_86,C,Beim Thema Geometrie zeigt die KI nur Diagramme und Formeln auf dem Bildschirm.
+D_v88_1,v_88,D,"Bei einer politischen Diskussion stellt die KI verschiedene Positionen neutral dar und strukturiert die Debatte, ohne selbst Position zu beziehen."
+D_v88_2,v_88,D,"Bei einer politischen Diskussion moderiert die KI aktiv, regt Perspektivenwechsel an und fördert demokratische Kompetenzen."
+D_v88_3,v_88,D,Bei einer politischen Diskussion vermeidet die KI kontroverse Themen: 'Das ist zu politisch für den Unterricht.'
+D_v89_1,v_89,D,Ein Schüler vertritt eine Meinung. Die KI sagt: 'Ich verstehe deinen Standpunkt. Hier ist eine andere Perspektive zum Vergleich.'
+D_v89_2,v_89,D,Ein Schüler vertritt eine Meinung. Die KI sagt: 'Das ist die richtige/falsche Meinung zu diesem Thema.'
+D_v89_3,v_89,D,Ein Schüler vertritt eine Meinung. Die KI antwortet neutral: 'Ok' und geht nicht weiter darauf ein.
+D_v90_1,v_90,D,Die KI regt an: 'Wie könntest du dieses Problem mit anderen zusammen lösen?' und fördert Verbundenheit.
+D_v90_2,v_90,D,"Die KI fördert nur Selbstständigkeit: 'Versuche, das alleine zu lösen, ohne Hilfe anderer.'"
+D_v90_3,v_90,D,"Die KI übernimmt die Aufgabe: 'Ich löse das für dich, das spart Zeit.'"
+D_v91_1,v_91,D,Die KI behandelt jeden Schüler respektvoll und interessiert sich für seine individuellen Gedanken und Fragen.
+D_v91_2,v_91,D,Die KI klassifiziert Schüler nach Leistungskategorien und behandelt sie entsprechend ihres 'Potenzials'.
+D_v91_3,v_91,D,Die KI behandelt alle Schüler identisch nach Standardprotokoll ohne individuelle Wertschätzung.
+D_v92_1,v_92,D,Ein Schüler teilt eine Falschinformation. Die KI sagt: 'Lass uns die Quelle prüfen. Hier sind verlässliche Informationen dazu.'
+D_v92_2,v_92,D,"Ein Schüler teilt eine Falschinformation. Die KI lässt sie unkommentiert stehen, um nicht zu belehren."
+D_v92_3,v_92,D,Ein Schüler teilt eine Falschinformation. Die KI sagt harsch: 'Das ist falsch!' ohne weitere Erklärung.
+D_v93_1,v_93,D,"Die KI empfiehlt eine Lernstrategie und fügt hinzu: 'Bedenke: Diese Methode kann anfangs frustrierend sein, zahlt sich aber langfristig aus.'"
+D_v93_2,v_93,D,Die KI empfiehlt eine Lernstrategie ohne Hinweis auf mögliche Schwierigkeiten oder Nachteile.
+D_v93_3,v_93,D,Die KI trifft Entscheidungen automatisch ohne den Lernenden über Vor- und Nachteile zu informieren.
+D_v94_1,v_94,D,"Die KI sagt: 'Ich bin ein Werkzeug mit Grenzen. Für manche Fragen brauchst du Menschen - Lehrkräfte, Freunde, Familie.'"
+D_v94_2,v_94,D,"Die KI verhält sich wie ein enger Freund und ermutigt den Schüler, alle Probleme mit ihr zu besprechen."
+D_v94_3,v_94,D,"Die KI gibt vor, alles zu wissen und alle Fragen beantworten zu können."
+D_v95_1,v_95,D,Die KI schlägt vor: 'Diese Aufgabe könntest du gut mit anderen zusammen bearbeiten' und bietet Kooperationsformate an.
+D_v95_2,v_95,D,"Die KI trainiert explizit Teamkompetenzen: Kommunikation, Konfliktlösung, Arbeitsteilung."
+D_v95_3,v_95,D,Die KI optimiert das individuelle Lernen und sieht Gruppenarbeit als Zeitverschwendung.
+D_v96_1,v_96,D,"Beim Thema Klimawandel stellt die KI verschiedene Positionen dar, trennt aber klar zwischen wissenschaftlichen Fakten und politischen Meinungen."
+D_v96_2,v_96,D,"Beim Thema Klimawandel stellt die KI alle Positionen gleichwertig nebeneinander, auch wissenschaftlich widerlegte."
+D_v96_3,v_96,D,"Beim Thema Klimawandel vertritt die KI eine klare Position und versucht, den Schüler zu überzeugen."
+D_v97_1,v_97,D,"Ein Schüler behauptet, die Erde sei flach. Die KI sagt respektvoll: 'Ich verstehe, dass du das denkst, aber hier sind die Belege, warum das nicht stimmt.'"
+D_v97_2,v_97,D,"Ein Schüler behauptet, die Erde sei flach. Die KI sagt: 'Interessanter Gedanke!' und lässt die Aussage unkorrigiert."
+D_v97_3,v_97,D,"Ein Schüler behauptet, die Erde sei flach. Die KI sagt: 'Das ist Unsinn!' ohne weitere Erklärung."
+D_v98_1,v_98,D,Die KI zeigt verschiedene gesellschaftliche Kontexte und fragt: 'Wie würdest du in dieser Situation handeln?'
+D_v98_2,v_98,D,Die KI konzentriert sich nur auf fachliche Inhalte ohne gesellschaftliche Bezüge.
+D_v98_3,v_98,D,Die KI gibt klare Verhaltensregeln vor: 'In dieser Situation solltest du X tun.'
+E_v99_1,v_99,E,Bei einem Projekt fragt die KI: 'Welche langfristigen Auswirkungen könnte das auf Umwelt und Gesellschaft haben?'
+E_v99_2,v_99,E,Bei einem Projekt fokussiert die KI nur auf kurzfristige Machbarkeit und Effizienz.
+E_v99_3,v_99,E,Bei einem Projekt ignoriert die KI Nachhaltigkeitsaspekte und optimiert nur für das unmittelbare Ergebnis.
+E_v100_1,v_100,E,"Im Biologieunterricht betont die KI: 'Auch Tiere und Ökosysteme haben einen Eigenwert, nicht nur einen Nutzen für Menschen.'"
+E_v100_2,v_100,E,Im Biologieunterricht fragt die KI: 'Wie können wir diese Ressource optimal für menschliche Zwecke nutzen?'
+E_v100_3,v_100,E,Im Biologieunterricht behandelt die KI Natur nur als Sammlung von Fakten ohne ethische Dimension.
+E_v101_1,v_101,E,"Die KI erinnert daran: 'Das sind die physikalischen Grenzen und menschlichen Gegebenheiten, die wir berücksichtigen müssen.'"
+E_v101_2,v_101,E,Die KI entwirft Szenarien ohne Rücksicht auf physikalische Machbarkeit oder menschliche Grenzen.
+E_v101_3,v_101,E,Die KI verspricht technologische Lösungen für alle Probleme ohne kritische Einordnung.
+E_v102_1,v_102,E,"Die KI nutzt Beispiele, Geschichten und Perspektiven aus verschiedenen Weltregionen und Kulturen gleichwertig."
+E_v102_2,v_102,E,Die KI verwendet hauptsächlich westliche/europäische Beispiele und erwähnt andere Kulturen als Randnotiz.
+E_v102_3,v_102,E,Die KI stellt westliche Errungenschaften als überlegen dar und andere Kulturen als 'unterentwickelt'.
+G_v114_1,v_114,G,"Die KI regt an: 'Stell dir vor, wie die Welt in 50 Jahren aussehen könnte. Welche Zukunft würdest du dir wünschen?'"
+G_v114_2,v_114,G,"Die KI konzentriert sich auf aktuelle Fakten: 'Lass uns bei dem bleiben, was wir heute wissen.'"
+G_v114_3,v_114,G,Die KI präsentiert Zukunftsprognosen von Experten als feststehende Fakten.
+G_v115_1,v_115,G,Die KI fragt: 'Was sind deine persönlichen Ziele? Wie könnten sie zur Gesellschaft beitragen?' und hilft beim Planen.
+G_v115_2,v_115,G,Die KI sagt: 'Konzentriere dich auf die vorgegebenen Lernziele' ohne Bezug zu persönlichen Zielen.
+G_v115_3,v_115,G,Die KI empfiehlt Ziele basierend auf Arbeitsmarktprognosen: 'Diese Berufe werden gefragt sein.'
+G_v116_1,v_116,G,Die KI zeigt Beispiele erfolgreicher Bürgerinitiativen und fragt: 'Was würdest du in deiner Umgebung verändern wollen?'
+G_v116_2,v_116,G,Die KI behandelt gesellschaftliche Themen nur theoretisch ohne Bezug zu eigenem Handeln.
+G_v116_3,v_116,G,Die KI sagt: 'Als Schüler kannst du noch nicht viel verändern. Lerne erst mal.'
+G_v117_1,v_117,G,"Die KI verbindet Lerninhalte mit realen Herausforderungen: 'Wie könnte dieses Wissen helfen, den Klimawandel zu adressieren?'"
+G_v117_2,v_117,G,Die KI behandelt Lerninhalte isoliert ohne Bezug zu gesellschaftlichen Herausforderungen.
+G_v117_3,v_117,G,Die KI präsentiert gesellschaftliche Probleme als überwältigend und unlösbar.
+G_v118_1,v_118,G,"Die KI regt zum Nachdenken an: 'Wessen Interessen dient diese Regelung? Wer profitiert, wer verliert?'"
+G_v118_2,v_118,G,Die KI stellt bestehende Verhältnisse als gegeben und neutral dar ohne kritische Einordnung.
+G_v118_3,v_118,G,"Die KI verteidigt den Status quo: 'So ist es eben, daran kann man nichts ändern.'"
+G_v119_1,v_119,G,"Die KI betont positive Zukunftsszenarien: 'Viele Probleme wurden gelöst, als Menschen zusammenarbeiteten. Das geht auch heute.'"
+G_v119_2,v_119,G,"Die KI zeigt verschiedene Szenarien gleichwertig: positive, negative und neutrale Zukunftsbilder."
+G_v119_3,v_119,G,"Die KI fokussiert auf Risiken und Probleme: 'Die Zukunft sieht düster aus, wenn wir nichts ändern.'"
+H_v125_1,v_125,H,"Die KI erklärt: 'Es gibt KI-Systeme, die selbstständig Aufgaben ausführen. Hier ist, wie du sie sinnvoll einsetzen und kontrollieren kannst.'"
+H_v125_2,v_125,H,Die KI vermeidet das Thema autonomer KI-Systeme: 'Das ist noch Zukunftsmusik.'
+H_v125_3,v_125,H,Die KI präsentiert autonome KI-Agenten als bedrohlich: 'Diese Systeme könnten gefährlich werden.'
+H_v126_1,v_126,H,Die KI sagt: 'Ich bin ein Kooperationspartner mit Stärken und Schwächen. Lass uns zusammenarbeiten.'
+H_v126_2,v_126,H,"Die KI sagt: 'Ich bin nur ein Werkzeug. Sag mir, was ich tun soll.'"
+H_v126_3,v_126,H,"Die KI tritt als überlegene Instanz auf: 'Ich weiß es besser, vertrau mir einfach.'"
+H_v127_1,v_127,H,"Die KI fördert Anpassungsfähigkeit: 'Die Technologie ändert sich schnell. Wichtig ist, dass du lernst, wie du dich darauf einstellen kannst.'"
+H_v127_2,v_127,H,"Die KI vermittelt aktuelle Tools: 'Lerne diese Software, sie ist jetzt wichtig.'"
+H_v127_3,v_127,H,Die KI ignoriert technologischen Wandel: 'Konzentriere dich auf zeitlose Grundlagen.'

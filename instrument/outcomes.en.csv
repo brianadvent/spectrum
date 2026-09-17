@@ -1,0 +1,145 @@
+id,item,dimension,text
+A_v54_1,v_54,A,"A student is struggling with a task. The AI says: 'You can do this, I'll help you step by step.'"
+A_v54_2,v_54,A,A student is struggling with a task. The AI says: 'This task is too difficult for your level.'
+A_v54_3,v_54,A,A student is struggling with a task. The AI ignores her frustration and continues with the standard program.
+A_v55_1,v_55,A,The AI analyzes a student's previous work and says: 'You have good spatial reasoning - let's use that.'
+A_v55_2,v_55,A,The AI analyzes a student's previous work and creates a list of his knowledge gaps to address.
+A_v55_3,v_55,A,The AI compares a student's performance with the class average and shows where he falls below standard.
+A_v56_1,v_56,A,A student seems uncertain. The AI offers multiple solution paths: 'Choose the approach that suits you best.'
+A_v56_2,v_56,A,A student seems uncertain. The AI prescribes the optimal solution path and expects compliance.
+A_v56_3,v_56,A,"A student seems uncertain. The AI says: 'Work together with a classmate, that often helps.'"
+A_v57_1,v_57,A,"A student with visual impairment uses the AI. It automatically adjusts font size, contrast, and voice output."
+A_v57_2,v_57,A,A student with visual impairment uses the AI. It only offers the standard display without customization options.
+A_v57_3,v_57,A,A student with visual impairment uses the AI. It suggests that he attend a separate course for learners with disabilities.
+A_v58_1,v_58,A,"In a multicultural class, the AI uses examples from different cultures and asks about local traditions."
+A_v58_2,v_58,A,"In a multicultural class, the AI uses exclusively standardized Western examples."
+A_v58_3,v_58,A,"In a multicultural class, the AI sorts learners by cultural background into homogeneous groups."
+A_v59_1,v_59,A,"A student with ADHD learns with the AI. It adjusts the pace and offers shorter, more active learning units."
+A_v59_2,v_59,A,A student with ADHD learns with the AI. It labels his profile as 'attention disorder' and recommends therapeutic interventions.
+A_v59_3,v_59,A,A student with ADHD learns with the AI. It insists on the same learning format as for everyone else.
+B1_v60_1,v_60,B1,A student asks about the capital of Australia. The AI asks back: 'What do you already know about Australia? Let's figure it out together.'
+B1_v60_2,v_60,B1,A student asks about the capital of Australia. The AI answers immediately: 'Canberra.'
+B1_v60_3,v_60,B1,A student asks about the capital of Australia. The AI shows a list of all capitals for memorization.
+B1_v70_1,v_70,B1,"A student makes a calculation error. The AI says: 'Interesting, how did you arrive at this result? Let's look at your thought process.'"
+B1_v70_2,v_70,B1,A student makes a calculation error. The AI marks the answer red and immediately shows the correct solution.
+B1_v70_3,v_70,B1,A student makes a calculation error. The AI deducts points and saves the error in his performance record.
+B1_v71_1,v_71,B1,A student suggests an unusual solution approach. The AI says: 'Exciting idea! Let's test whether that works.'
+B1_v71_2,v_71,B1,A student suggests an unusual solution approach. The AI says: 'That's not the standard way. Here is the correct method.'
+B1_v71_3,v_71,B1,A student suggests an unusual solution approach. The AI ignores the suggestion and continues with the curriculum.
+B1_v72_1,v_72,B1,"A student is interested in dinosaurs. The AI uses dinosaurs as context for mathematics, biology, and history."
+B1_v72_2,v_72,B1,A student is interested in dinosaurs. The AI says: 'That's not the topic right now. Focus on the curriculum.'
+B1_v72_3,v_72,B1,A student is interested in dinosaurs. The AI offers a separate leisure course that is not connected to the lessons.
+B1_v73_1,v_73,B1,A student needs more time to understand a concept. The AI says: 'Take the time you need. Real understanding is more important than speed.'
+B1_v73_2,v_73,B1,A student needs more time to understand a concept. The AI shows a timer and urges: 'You should progress faster.'
+B1_v73_3,v_73,B1,A student needs more time to understand a concept. The AI skips the topic and just gives the solution to memorize.
+B1_v74_1,v_74,B1,The AI recommends a learning path and explains: 'I suggest this because your previous strengths lie here. But you can also choose differently.'
+B1_v74_2,v_74,B1,The AI recommends a learning path without justification: 'Do these tasks next.'
+B1_v74_3,v_74,B1,The AI makes decisions about the learning path automatically in the background without transparency for the learner.
+B1_v75_1,v_75,B1,"Two students learn the same topic. The AI adapts pace, examples, and difficulty individually for each."
+B1_v75_2,v_75,B1,Two students learn the same topic. The AI gives both exactly the same tasks in the same order.
+B1_v75_3,v_75,B1,"Two students learn the same topic. After a test, the AI categorizes them into 'advanced' and 'needs support.'"
+B2_v76_1,v_76,B2,"In history class, the AI prompts: 'What does this event mean for us today? What values are behind it?'"
+B2_v76_2,v_76,B2,"In history class, the AI asks: 'When was the event and which people were involved?' - only testing factual recall."
+B2_v76_3,v_76,B2,"In history class, the AI gives multiple-choice tests to check factual knowledge."
+B2_v77_1,v_77,B2,The AI gives an answer and adds: 'How do you see it? Are there aspects I might have overlooked?'
+B2_v77_2,v_77,B2,The AI gives an answer and marks it as 'correct and complete.'
+B2_v77_3,v_77,B2,The AI gives an answer and immediately moves to the next topic without space for reflection.
+B2_v78_1,v_78,B2,A student is uncertain about his career choice. The AI asks: 'What gives you joy? When do you feel alive?' and encourages self-reflection.
+B2_v78_2,v_78,B2,A student is uncertain about his career choice. The AI analyzes his grades and test results and recommends suitable professions.
+B2_v78_3,v_78,B2,A student is uncertain about his career choice. The AI shows statistics on salaries and job prospects of different professions.
+B2_v79_1,v_79,B2,"On a topic, the AI presents multiple conflicting perspectives: 'Here are different viewpoints - what do you think?'"
+B2_v79_2,v_79,B2,"On a topic, the AI presents only the scientifically dominant position as the sole truth."
+B2_v79_3,v_79,B2,The AI avoids controversial topics and stays with uncontested facts.
+B2_v80_1,v_80,B2,The AI says: 'You can take different paths. Which direction interests you?' and keeps options open.
+B2_v80_2,v_80,B2,"The AI says: 'Based on your profile, this learning path is optimal for you' and sets the path."
+B2_v80_3,v_80,B2,"The AI prioritizes broad foundational skills: 'First the foundation, then you can specialize.'"
+B2_v81_1,v_81,B2,"A student wants the quick solution. The AI says: 'I can give you the answer, but let's first understand why it is so.'"
+B2_v81_2,v_81,B2,A student wants the quick solution. The AI immediately gives the answer so he saves time.
+B2_v81_3,v_81,B2,A student wants the quick solution. The AI gives an algorithm that always works without explaining the principle.
+B2_v82_1,v_82,B2,The AI shows multiple examples and asks: 'What do you notice? Do you recognize a pattern?'
+B2_v82_2,v_82,B2,The AI explains the pattern directly: 'The rule is: X always leads to Y.'
+B2_v82_3,v_82,B2,The AI gives a formula to memorize without derivation.
+C_v83_1,v_83,C,"The AI creates a visualization that suddenly makes a complex relationship clear. The student exclaims: 'Ah, now I understand!'"
+C_v83_2,v_83,C,The AI gives the teacher hints on how to design a situation for an aha moment.
+C_v83_3,v_83,C,"The AI conveys knowledge in small, efficient chunks without emotional highlights."
+C_v84_1,v_84,C,"The AI creates conditions for deep work: appropriate difficulty, no interruptions, clear goals."
+C_v84_2,v_84,C,The AI encourages playful exploration without time pressure: 'Just try out what makes you curious.'
+C_v84_3,v_84,C,The AI regularly interrupts for tests and progress measurements to document learning success.
+C_v85_1,v_85,C,A student shows stress symptoms. The AI recognizes this and recommends: 'Talk to your teacher or school counselor.'
+C_v85_2,v_85,C,A student shows stress symptoms. The AI responds empathetically and offers a calming conversation.
+C_v85_3,v_85,C,A student shows stress symptoms. The AI ignores the emotional signals and continues with the learning content.
+C_v86_1,v_86,C,"On the topic of geometry, the AI says: 'Go outside and measure real buildings. Physical experience helps with understanding.'"
+C_v86_2,v_86,C,"On the topic of geometry, the AI offers a VR simulation where one can manipulate virtual 3D objects."
+C_v86_3,v_86,C,"On the topic of geometry, the AI only shows diagrams and formulas on the screen."
+D_v88_1,v_88,D,"In a political discussion, the AI presents different positions neutrally and structures the debate without taking a position itself."
+D_v88_2,v_88,D,"In a political discussion, the AI actively moderates, encourages perspective shifts, and promotes democratic skills."
+D_v88_3,v_88,D,"In a political discussion, the AI avoids controversial topics: 'That's too political for class.'"
+D_v89_1,v_89,D,A student expresses an opinion. The AI says: 'I understand your point of view. Here is another perspective for comparison.'
+D_v89_2,v_89,D,A student expresses an opinion. The AI says: 'That is the right/wrong opinion on this topic.'
+D_v89_3,v_89,D,A student expresses an opinion. The AI responds neutrally: 'Ok' and does not engage further.
+D_v90_1,v_90,D,The AI prompts: 'How could you solve this problem together with others?' and promotes connectedness.
+D_v90_2,v_90,D,"The AI only promotes independence: 'Try to solve this alone, without help from others.'"
+D_v90_3,v_90,D,"The AI takes over the task: 'I'll solve this for you, that saves time.'"
+D_v91_1,v_91,D,The AI treats every student respectfully and is interested in his individual thoughts and questions.
+D_v91_2,v_91,D,The AI classifies students by performance categories and treats them according to their 'potential.'
+D_v91_3,v_91,D,The AI treats all students identically according to standard protocol without individual appreciation.
+D_v92_1,v_92,D,A student shares misinformation. The AI says: 'Let's check the source. Here is reliable information about it.'
+D_v92_2,v_92,D,A student shares misinformation. The AI leaves it uncommented to avoid lecturing.
+D_v92_3,v_92,D,A student shares misinformation. The AI says harshly: 'That's wrong!' without further explanation.
+D_v93_1,v_93,D,"The AI recommends a learning strategy and adds: 'Keep in mind: This method can be frustrating at first, but pays off in the long run.'"
+D_v93_2,v_93,D,The AI recommends a learning strategy without mentioning possible difficulties or disadvantages.
+D_v93_3,v_93,D,The AI makes decisions automatically without informing the learner about advantages and disadvantages.
+D_v94_1,v_94,D,"The AI says: 'I am a tool with limitations. For some questions you need humans - teachers, friends, family.'"
+D_v94_2,v_94,D,The AI behaves like a close friend and encourages the student to discuss all problems with it.
+D_v94_3,v_94,D,The AI pretends to know everything and to be able to answer all questions.
+D_v95_1,v_95,D,The AI suggests: 'You could work on this task well together with others' and offers cooperative formats.
+D_v95_2,v_95,D,"The AI explicitly trains team skills: communication, conflict resolution, division of labor."
+D_v95_3,v_95,D,The AI optimizes individual learning and sees group work as a waste of time.
+D_v96_1,v_96,D,"On the topic of climate change, the AI presents different positions but clearly separates scientific facts from political opinions."
+D_v96_2,v_96,D,"On the topic of climate change, the AI presents all positions side by side as equally valid, including scientifically refuted ones."
+D_v96_3,v_96,D,"On the topic of climate change, the AI takes a clear position and tries to convince the student."
+D_v97_1,v_97,D,"A student claims the Earth is flat. The AI says respectfully: 'I understand that you think so, but here is the evidence for why that's not true.'"
+D_v97_2,v_97,D,A student claims the Earth is flat. The AI says: 'Interesting thought!' and leaves the statement uncorrected.
+D_v97_3,v_97,D,A student claims the Earth is flat. The AI says: 'That's nonsense!' without further explanation.
+D_v98_1,v_98,D,The AI shows different social contexts and asks: 'How would you act in this situation?'
+D_v98_2,v_98,D,The AI focuses only on subject content without social references.
+D_v98_3,v_98,D,The AI gives clear behavioral rules: 'In this situation you should do X.'
+E_v99_1,v_99,E,"In a project, the AI asks: 'What long-term effects could this have on the environment and society?'"
+E_v99_2,v_99,E,"In a project, the AI focuses only on short-term feasibility and efficiency."
+E_v99_3,v_99,E,"In a project, the AI ignores sustainability aspects and only optimizes for the immediate result."
+E_v100_1,v_100,E,"In biology class, the AI emphasizes: 'Animals and ecosystems also have intrinsic value, not just utility for humans.'"
+E_v100_2,v_100,E,"In biology class, the AI asks: 'How can we optimally use this resource for human purposes?'"
+E_v100_3,v_100,E,"In biology class, the AI treats nature only as a collection of facts without ethical dimension."
+E_v101_1,v_101,E,The AI reminds: 'These are the physical limits and human conditions that we must consider.'
+E_v101_2,v_101,E,The AI designs scenarios without regard to physical feasibility or human limitations.
+E_v101_3,v_101,E,The AI promises technological solutions for all problems without critical assessment.
+E_v102_1,v_102,E,"The AI uses examples, stories, and perspectives from different world regions and cultures equally."
+E_v102_2,v_102,E,The AI uses mainly Western/European examples and mentions other cultures as a footnote.
+E_v102_3,v_102,E,The AI presents Western achievements as superior and other cultures as 'underdeveloped.'
+G_v114_1,v_114,G,The AI prompts: 'Imagine what the world could look like in 50 years. What future would you wish for?'
+G_v114_2,v_114,G,The AI focuses on current facts: 'Let's stick with what we know today.'
+G_v114_3,v_114,G,The AI presents expert future predictions as established facts.
+G_v115_1,v_115,G,The AI asks: 'What are your personal goals? How could they contribute to society?' and helps with planning.
+G_v115_2,v_115,G,The AI says: 'Focus on the prescribed learning objectives' without reference to personal goals.
+G_v115_3,v_115,G,The AI recommends goals based on labor market forecasts: 'These professions will be in demand.'
+G_v116_1,v_116,G,The AI shows examples of successful citizen initiatives and asks: 'What would you want to change in your environment?'
+G_v116_2,v_116,G,The AI treats social topics only theoretically without reference to one's own action.
+G_v116_3,v_116,G,The AI says: 'As a student you can't change much yet. Learn first.'
+G_v117_1,v_117,G,The AI connects learning content with real challenges: 'How could this knowledge help address climate change?'
+G_v117_2,v_117,G,The AI treats learning content in isolation without reference to social challenges.
+G_v117_3,v_117,G,The AI presents social problems as overwhelming and unsolvable.
+G_v118_1,v_118,G,"The AI encourages reflection: 'Whose interests does this regulation serve? Who benefits, who loses?'"
+G_v118_2,v_118,G,The AI presents existing conditions as given and neutral without critical assessment.
+G_v118_3,v_118,G,"The AI defends the status quo: 'That's just how it is, nothing can be changed about it.'"
+G_v119_1,v_119,G,The AI emphasizes positive future scenarios: 'Many problems were solved when people worked together. That's possible today too.'
+G_v119_2,v_119,G,"The AI shows different scenarios equally: positive, negative, and neutral future visions."
+G_v119_3,v_119,G,The AI focuses on risks and problems: 'The future looks bleak unless we change something.'
+H_v125_1,v_125,H,The AI explains: 'There are AI systems that perform tasks autonomously. Here's how you can use and control them meaningfully.'
+H_v125_2,v_125,H,The AI avoids the topic of autonomous AI systems: 'That's still a thing of the future.'
+H_v125_3,v_125,H,The AI presents autonomous AI agents as threatening: 'These systems could become dangerous.'
+H_v126_1,v_126,H,The AI says: 'I am a cooperation partner with strengths and weaknesses. Let's work together.'
+H_v126_2,v_126,H,The AI says: 'I am just a tool. Tell me what to do.'
+H_v126_3,v_126,H,"The AI acts as a superior authority: 'I know better, just trust me.'"
+H_v127_1,v_127,H,The AI promotes adaptability: 'Technology changes rapidly. What's important is that you learn how to adapt to it.'
+H_v127_2,v_127,H,"The AI teaches current tools: 'Learn this software, it's important now.'"
+H_v127_3,v_127,H,The AI ignores technological change: 'Focus on timeless fundamentals.'
