@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Autenrieth
     given-names: Daniel
-version: 1.1.0
+version: 1.2.0
 date-released: 2026-09-17
 url: "https://github.com/brianadvent/spectrum"
 repository-code: "https://github.com/brianadvent/spectrum"

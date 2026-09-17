@@ -1,6 +1,6 @@
 [project]
 name = "spectrum"
-version = "1.1.0"
+version = "1.2.0"
 description = "Structured Preference Elicitation for your context"
 requires-python = ">=3.12"
 dependencies = ["aiohttp>=3.13.2,<4", "numpy>=2,<3", "scipy>=1.14,<2"]

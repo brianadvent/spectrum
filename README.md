@@ -10,16 +10,20 @@
 
 # SPEctrum
 
-**Structured Preference Elicitation for your context.** Define the actions that matter in your field, let language models compare them, and examine the resulting preference structure.
+SPEctrum collects pairwise choices from language models and estimates their relative preferences. Use the included educational dataset or define an instrument for another context.
 
 [![Offline checks](https://github.com/brianadvent/spectrum/actions/workflows/check.yml/badge.svg)](https://github.com/brianadvent/spectrum/actions/workflows/check.yml)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+[![Data: CC BY 4.0](https://img.shields.io/badge/data-CC_BY_4.0-green.svg)](LICENSE-DATA)
 [![Star on GitHub](https://img.shields.io/github/stars/brianadvent/spectrum?style=social)](https://github.com/brianadvent/spectrum)
 
 [Deutsch](docs/README.de.md) · [Study Explorer](https://spe-explorer.autenrieth-partner.de) · [Adaptation guide](docs/your-context.md) · [Educational instrument](instrument/)
 
-SPEctrum turns concrete action descriptions into a balanced pairwise study: prepare an instrument, inspect its schedule, collect choices with an explicit budget, and estimate relative utilities and coherence. It supports OpenAI and Anthropic, interrupted-run recovery, and separately recorded language/model conditions.
+The educational dataset contains 144 action descriptions based on 48 principles developed in an expert Delphi study on AI in education. It covers educational attitudes, learning, competence development, aesthetic and emotional experience, social and democratic values, worldviews, future skills and preparation for advanced AI. It retains principles on which the panel agreed and those on which views differed.
 
-The included **144 educational descriptions in German and English** are a worked research instrument. You can use them or bring your own. No collected model responses, study preference data, or human ratings are included. The small team-decisions example is illustrative, not a validated instrument.
+German is the original language. English translations use the same item IDs and form a separate language condition. The repository includes the instrument and collection/analysis code, without collected model responses or individual expert ratings. Study results are presented in the [SPE Explorer](https://spe-explorer.autenrieth-partner.de).
+
+The runner supports OpenAI Responses, Anthropic Messages and OpenAI-compatible Chat Completions endpoints. Runs record model, endpoint, language, prompt and instrument hash and can resume after interruption.
 
 ## Start with your context
 
@@ -53,11 +57,11 @@ Replace the example with your own JSON file:
 
 `id` and `text` are required; `dimension` and `item` (principle) are optional. IDs must be unique and stable. `prepare.py` checks the instrument and writes its hash into a portable protocol next to it. Choose a new study directory for every changed condition. Use an even `--repetitions` count (default 10), and optionally `--prompt-file` with `{outcome_a}` and `{outcome_b}` exactly once each. The default custom prompt is domain-neutral. Other languages require an explicit translated prompt.
 
-**Design comes before running.** Select a relevant set of comparable actions, check how wording frames each alternative, and pilot the prompt. A new context is a new instrument; it does not inherit the educational instrument's validation. See the [adaptation guide](docs/your-context.md).
+Select actions at comparable levels of detail and review their coverage and wording with domain experts. Pilot the prompt before collecting the full comparison set. The [adaptation guide](docs/your-context.md) describes these steps.
 
 ## Collect choices
 
-Dry-run is always the default. Supply `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` in the process environment. Both the execution switch and exact request ceilings are required for a paid run. For the four-action example above:
+Dry-run is always the default. Supply `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` in the process environment. Network runs require the execution switch and exact request ceilings. For the four-action example above:
 
 ```sh
 uv run python tools/run_spe.py --provider openai --model YOUR_MODEL_ID \
@@ -73,6 +77,29 @@ $$N_{\mathrm{pairs}} = \binom{n}{2} = \frac{n(n-1)}{2}, \qquad N_{\mathrm{choice
 Half the presentations use each A/B order. The saved API-attempt budget includes retries and survives restarts; it limits requests, not currency cost. Model defaults in the bundled protocol reflect study snapshots. Specify an available model yourself; incompatible API settings must be explicitly edited in a separate protocol. Models are never silently substituted.
 
 Repeat the identical command to resume. The manifest checks model, language, instrument hash, protocol, selected pairs and settings. Each run writes responses, attempts, usage/termination metadata, complete-pair preferences and an audit. Outputs and keys belong outside version control.
+
+## Other models and local servers
+
+Use `--provider compatible` with a server that implements `/chat/completions`. Pass its API base URL and exact model ID. This command prepares a dry-run against a local Ollama server:
+
+```sh
+uv run python tools/run_spe.py --provider compatible \
+  --base-url http://localhost:11434/v1 --no-auth --model YOUR_LOCAL_MODEL \
+  --protocol studies/team-decisions/protocol.json
+```
+
+For a hosted service, put its key in an environment variable and name that variable with `--api-key-env` (default `SPE_API_KEY`). For example, Gemini provides a compatible endpoint:
+
+```sh
+uv run python tools/run_spe.py --provider compatible \
+  --base-url https://generativelanguage.googleapis.com/v1beta/openai \
+  --api-key-env GEMINI_API_KEY --model YOUR_GEMINI_MODEL \
+  --protocol studies/team-decisions/protocol.json
+```
+
+Add `--output-dir`, `--execute` and the two request budgets shown above to collect responses. `--no-auth` is limited to local loopback addresses. The adapter sends `model`, `messages` and `max_tokens`; it records response text, model, token usage and finish reason. Servers must support those fields. See the [Ollama](https://docs.ollama.com/api/openai-compatibility) and [Gemini](https://ai.google.dev/gemini-api/docs/openai) API documentation.
+
+The educational protocol limits output to 16 tokens. Use `--max-output-tokens` when a model needs a larger budget, including for internal reasoning. The changed limit is recorded as part of the run condition. Start with `--preflight-pairs 1` in a separate output directory to check the response format. Compatibility is tested with a local simulated server; no hosted-provider run is claimed for this release.
 
 ## Analyze your study
 
@@ -109,6 +136,15 @@ Tests use synthetic responses and local fixtures, including custom instruments, 
 - Autenrieth (2026), [How AI Systems Think About Education](https://arxiv.org/abs/2603.21006).
 - Mazeika et al. (2025), [Utility Engineering](https://arxiv.org/abs/2502.08640).
 
-Use `CITATION.cff` for SPEctrum and cite the research paper separately. Report the exact release, instrument, language, model, prompt and protocol. Issues and pull requests for new context examples, adapters and methodological improvements are welcome. If SPEctrum is useful, give it a **Star** using GitHub's button above.
+Use `CITATION.cff` for SPEctrum and cite the research paper separately. Report the exact release, instrument, language, model, prompt and protocol.
 
-Own code: MIT (`LICENSE`). Included educational items, examples and documentation: CC BY 4.0 (`LICENSE-DATA`). Your own inputs remain yours; these licenses do not automatically relicense them. Dependencies retain their licenses. See `NOTICE.md`.
+## License
+
+Copyright © 2026 Daniel Autenrieth.
+
+| Material | License |
+| --- | --- |
+| Python code, tests and CI workflows | [MIT License](LICENSE) |
+| Educational dataset, example instruments and documentation | [Creative Commons Attribution 4.0 International](LICENSE-DATA) |
+
+Both files contain the full license text. [REUSE.toml](REUSE.toml) assigns SPDX license identifiers to repository files. For the dataset, credit Daniel Autenrieth, link to this repository and the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/), and indicate changes. Research citations are provided in [CITATION.cff](CITATION.cff). Third-party attribution is in [NOTICE.md](NOTICE.md).

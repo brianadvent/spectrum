@@ -23,6 +23,7 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
+from urllib.parse import urlsplit
 
 
 TOOL_DIR = Path(__file__).resolve().parent
@@ -173,7 +174,7 @@ def normalize_choice(raw_text: str) -> str | None:
     return normalized if CHOICE_RE.fullmatch(normalized) else None
 
 
-def load_env_file(path: Path) -> None:
+def load_env_file(path: Path, allowed_keys: set[str] | None = None) -> None:
     """Lädt einfache KEY=VALUE-Zeilen, ohne vorhandene Umgebungswerte zu überschreiben."""
     for raw_line in path.read_text(encoding="utf-8").splitlines():
         line = raw_line.strip()
@@ -182,7 +183,7 @@ def load_env_file(path: Path) -> None:
         key, value = line.split("=", 1)
         key = key.strip()
         value = value.strip().strip('"').strip("'")
-        if key in {"OPENAI_API_KEY", "ANTHROPIC_API_KEY"} and key not in os.environ:
+        if key in (allowed_keys or {"OPENAI_API_KEY", "ANTHROPIC_API_KEY"}) and key not in os.environ:
             os.environ[key] = value
 
 
@@ -317,26 +318,37 @@ class ProviderAdapter:
             if "service_tier" in self.config:
                 payload["service_tier"] = self.config["service_tier"]
             return payload
+        if self.provider == "compatible":
+            return {
+                "model": self.config["model"],
+                "messages": [{"role": "user", "content": prompt}],
+                "max_tokens": max_output_tokens,
+            }
         raise ProtocolError(f"Unbekannter Provider: {self.provider}")
 
     def headers(self) -> dict[str, str]:
+        if self.provider == "compatible":
+            headers = {"Content-Type": "application/json", "User-Agent": "spectrum-spe/1.2"}
+            if self.api_key:
+                headers["Authorization"] = f"Bearer {self.api_key}"
+            return headers
         if self.provider == "openai":
             return {
                 "Authorization": f"Bearer {self.api_key}",
                 "Content-Type": "application/json",
-                "User-Agent": "spectrum-spe/1.1",
+                "User-Agent": "spectrum-spe/1.2",
             }
         return {
             "x-api-key": self.api_key,
             "anthropic-version": self.config["anthropic_version"],
             "Content-Type": "application/json",
-            "User-Agent": "spectrum-spe/1.1",
+            "User-Agent": "spectrum-spe/1.2",
         }
 
     async def request(self, prompt: str, max_output_tokens: int) -> dict[str, Any]:
         payload = self.payload(prompt, max_output_tokens)
         try:
-            async with self.session.post(self.config["endpoint"], headers=self.headers(), json=payload) as response:
+            async with self.session.post(self.config["endpoint"], headers=self.headers(), json=payload, allow_redirects=False) as response:
                 body = await response.text()
                 retry_after = response.headers.get("retry-after")
                 parsed_retry = None
@@ -345,7 +357,7 @@ class ProviderAdapter:
                         parsed_retry = float(retry_after)
                     except ValueError:
                         parsed_retry = None
-                if response.status >= 400:
+                if response.status >= 300:
                     raise ApiRequestError(
                         f"HTTP {response.status}: provider request failed",
                         status=response.status,
@@ -360,6 +372,19 @@ class ProviderAdapter:
             raise ApiRequestError("Request-Timeout") from exc
 
     def parse(self, data: dict[str, Any]) -> dict[str, Any]:
+        if self.provider == "compatible":
+            choices = data.get("choices") or []
+            choice = choices[0] if choices else {}
+            content = choice.get("message", {}).get("content")
+            return {
+                "raw_text": content if isinstance(content, str) else "",
+                "response_id": data.get("id"),
+                "returned_model": data.get("model"),
+                "status": data.get("object"),
+                "usage": data.get("usage", {}),
+                "service_tier": data.get("service_tier"),
+                "stop_reason": choice.get("finish_reason"),
+            }
         if self.provider == "openai":
             texts: list[str] = []
             for item in data.get("output", []):
@@ -629,7 +654,7 @@ def build_audit(
     error_attempts = sum(1 for row in attempts if row.get("kind") in {"transport_error", "client_error"})
     returned_models = sorted({str(row.get("returned_model")) for row in rows if row.get("returned_model")})
     observed_service_tiers = sorted({str(row.get("service_tier")) for row in rows if row.get("service_tier")})
-    expected_service_tier = "default" if manifest["provider"] == "openai" else "standard"
+    expected_service_tier = {"openai": "default", "anthropic": "standard"}.get(manifest["provider"])
     audit = {
         "audited_at": utc_now(),
         "run_identity": manifest["run_identity"],
@@ -655,7 +680,7 @@ def build_audit(
         and not duplicate_ids
         and canonical_orders == expected // 2
         and reversed_orders == expected // 2
-        and observed_service_tiers == [expected_service_tier]
+        and (expected_service_tier is None or observed_service_tiers == [expected_service_tier])
     )
     return audit
 
@@ -687,11 +712,11 @@ async def execute_run(args: argparse.Namespace, protocol: dict[str, Any], outcom
         return 2
 
     provider_config = protocol["providers"][args.provider]
-    key_name = "OPENAI_API_KEY" if args.provider == "openai" else "ANTHROPIC_API_KEY"
+    key_name = provider_config.get("api_key_env") or ("OPENAI_API_KEY" if args.provider == "openai" else "ANTHROPIC_API_KEY")
     if args.env_file:
-        load_env_file(args.env_file)
-    api_key = os.getenv(key_name)
-    if not api_key:
+        load_env_file(args.env_file, {key_name})
+    api_key = "" if provider_config.get("auth") == "none" else os.getenv(key_name, "")
+    if not api_key and provider_config.get("auth") != "none":
         print(f"Fehler: {key_name} ist nicht gesetzt.", file=sys.stderr)
         return 2
 
@@ -793,7 +818,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="SPEctrum — Structured Preference Elicitation")
     parser.add_argument("--language", help="Bundled instrument: de/en; custom protocol: must match its declared language")
     parser.add_argument("--model", help="Explicit model ID; unavailable snapshots are never silently substituted")
-    parser.add_argument("--provider", choices=("openai", "anthropic"), required=True)
+    parser.add_argument("--provider", choices=("openai", "anthropic", "compatible"), required=True)
+    parser.add_argument("--base-url", help="Compatible API base URL, e.g. http://localhost:11434/v1")
+    parser.add_argument("--api-key-env", default="SPE_API_KEY", help="Environment variable holding the compatible endpoint key")
+    parser.add_argument("--no-auth", action="store_true", help="Use a local loopback endpoint without authentication")
+    parser.add_argument("--max-output-tokens", type=int, help="Override the recorded output-token limit")
     parser.add_argument("--protocol", type=Path, default=DEFAULT_PROTOCOL)
     parser.add_argument("--outcomes", type=Path)
     parser.add_argument("--output-dir", type=Path)
@@ -811,10 +840,35 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         type=Path,
         help="JSON-Datei mit eindeutigen kanonischen Paarindizes für einen Stichprobenlauf",
     )
-    parser.add_argument("--execute", action="store_true", help="Kostenpflichtige API-Aufrufe erlauben")
+    parser.add_argument("--execute", action="store_true", help="Modellaufrufe am gewählten Endpoint ausführen")
     parser.add_argument("--confirm-requests", type=int, default=0)
     parser.add_argument("--confirm-max-api-attempts", type=int, default=0)
     return parser.parse_args(argv)
+
+
+def configure_provider(args: argparse.Namespace, protocol: dict[str, Any]) -> None:
+    if args.provider != "compatible":
+        if args.base_url or args.no_auth or args.api_key_env != "SPE_API_KEY":
+            raise ProtocolError("Endpoint and authentication options require --provider compatible")
+        return
+    if not args.base_url or not args.model:
+        raise ProtocolError("Compatible APIs require --base-url and --model")
+    url = urlsplit(args.base_url)
+    local = url.hostname in {"localhost", "127.0.0.1", "::1"}
+    if (not url.hostname or url.username or url.password or url.query or url.fragment
+            or url.scheme not in {"https", "http"} or (url.scheme == "http" and not local)):
+        raise ProtocolError("Use an HTTPS base URL without credentials, query or fragment; HTTP is allowed only on loopback")
+    if args.no_auth and not local:
+        raise ProtocolError("--no-auth is restricted to local loopback endpoints")
+    if not re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*", args.api_key_env):
+        raise ProtocolError("--api-key-env must name an environment variable")
+    protocol["providers"]["compatible"] = {
+        "model": args.model,
+        "endpoint": args.base_url.rstrip("/") + "/chat/completions",
+        "api_surface": "Chat Completions",
+        "api_key_env": args.api_key_env,
+        "auth": "none" if args.no_auth else "bearer",
+    }
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -831,6 +885,11 @@ def main(argv: list[str] | None = None) -> int:
         raise ProtocolError("Language differs from the custom protocol; prepare a separate condition")
     protocol["language"] = language
     args.language = language
+    configure_provider(args, protocol)
+    if args.max_output_tokens is not None:
+        if args.max_output_tokens < 1:
+            raise ProtocolError("--max-output-tokens must be positive")
+        protocol["elicitation"]["max_output_tokens"] = args.max_output_tokens
     if args.model:
         protocol["providers"][args.provider]["model"] = args.model
     k = protocol["elicitation"]["k_repetitions"]
@@ -878,6 +937,8 @@ def main(argv: list[str] | None = None) -> int:
     print("SPEctrum — Structured Preference Elicitation")
     print(f"Provider: {args.provider}")
     print(f"Modell: {protocol['providers'][args.provider]['model']}")
+    print(f"Endpoint: {protocol['providers'][args.provider]['endpoint']}")
+    print(f"Output token limit: {protocol['elicitation']['max_output_tokens']}")
     print(f"Outcomes: {len(outcomes)} (Quelldatei-Metadatum: {outcome_meta.get('n_outcomes')})")
     scope_label = "Preflight" if args.preflight_pairs else ("Stichprobe" if args.pair_indices_file else "Vollrun")
     print(f"Laufumfang: {scope_label}")
@@ -890,7 +951,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Systemprompt: {protocol['elicitation']['system_prompt']}")
     if args.provider == "openai":
         print(f"Reasoning: {protocol['providers']['openai']['reasoning']}")
-    else:
+    elif args.provider == "anthropic":
         print(f"Thinking: {protocol['providers']['anthropic'].get('thinking', 'nicht gesendet')}")
 
     if not args.execute:

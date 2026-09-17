@@ -13,3 +13,9 @@ Run the checks yourself using the commands in README.md. Actual provider credent
 ## SPEctrum 1.1.0
 
 The context-adaptation release adds preparation of arbitrary instruments, portable protocol-relative paths, custom prompts/languages, even repetition counts and instrument-aware analysis. Twenty-eight offline tests pass, including a four-action, four-repetition custom condition, balanced back-coding, custom analysis, modified-instrument rejection, language isolation, input validation and refusal to overwrite a prepared condition. The bundled educational instruments are unchanged.
+
+## SPEctrum 1.2.0
+
+The Chat Completions adapter adds explicit endpoint/model selection, named key environment variables and optional authentication-free loopback access. Thirty-three offline tests pass. A local HTTP test covers invalid-response retry, ten balanced presentations, a 0.5 aggregate for a model that always answers A, resume without repeated requests, and rejection of a changed endpoint. Additional checks cover response metadata, dry-run isolation and redirects. Hosted providers were not called.
+
+License texts and file assignments are checked with REUSE. README and German documentation now describe the educational dataset as Delphi-based, retaining both consensus and dissent. The educational item files are unchanged.

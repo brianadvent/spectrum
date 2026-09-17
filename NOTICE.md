@@ -7,3 +7,7 @@ The English texts originate in `brianadvent/spe-explorer` at commit `fc854fa06fc
 `tools/run_spe.py` adapts the August 2026 SPE replication runner. `tools/statistics.py` adapts its generation-comparison analysis. Changes make paths portable, support explicit language/model conditions, persist retry limits, prevent concurrent writers and retain nondecisions. The analysis fits observed complete pairs only.
 
 No code or full paper text from Mazeika et al. has been copied. Their Utility Engineering paper is credited as the methodological research reference. Python dependencies retain their own licenses.
+
+## License scope
+
+Code, tests and CI workflows are licensed under MIT. Instruments, examples, documentation and citation metadata are licensed under CC BY 4.0. Full terms are in `LICENSE` and `LICENSE-DATA`; `REUSE.toml` records file-level SPDX assignments. These grants cover the material distributed here, not separately supplied user instruments.

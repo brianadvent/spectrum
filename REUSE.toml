@@ -1,0 +1,11 @@
+version = 1
+
+[[annotations]]
+path = ["tools/**", "tests/**", ".github/**", "pyproject.toml", "uv.lock", ".gitignore", "REUSE.toml", "LICENSE"]
+SPDX-FileCopyrightText = "2026 Daniel Autenrieth"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["instrument/**", "examples/**", "docs/**", "README.md", "NOTICE.md", "CITATION.cff", "LICENSE-DATA"]
+SPDX-FileCopyrightText = "2026 Daniel Autenrieth"
+SPDX-License-Identifier = "CC-BY-4.0"

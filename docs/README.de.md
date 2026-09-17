@@ -2,7 +2,7 @@
 
 Welche Handlungen priorisiert ein Sprachmodell? SPEctrum hilft, diese Frage für einen eigenen Anwendungsbereich zu untersuchen: Handlungsbeschreibungen entwickeln, paarweise Entscheidungen erheben und eine relative Präferenzstruktur auswerten.
 
-Die 144 pädagogischen Beschreibungen auf Deutsch und Englisch sind ein mitgeliefertes Forschungsinstrument. Du kannst damit arbeiten oder eigene Beschreibungen verwenden. Die Forschungsresultate stehen im [SPE Explorer](https://spe-explorer.autenrieth-partner.de).
+Der enthaltene Bildungsdatensatz umfasst 144 Handlungsbeschreibungen zu 48 Prinzipien aus einer Delphi-Studie über KI in der Bildung. Er enthält sowohl konsentierte Prinzipien als auch Prinzipien mit fortbestehendem Dissens. Die deutschen Originaltexte und englischen Übersetzungen stehen als JSON und CSV bereit. Für andere Kontexte kannst du eigene Beschreibungen verwenden. Die Forschungsresultate stehen im [SPE Explorer](https://spe-explorer.autenrieth-partner.de).
 
 ## Kostenlos beginnen
 
@@ -20,7 +20,7 @@ uv run python tools/run_spe.py --provider openai \
 
 Das Beispiel enthält vier englische Handlungsbeschreibungen: sechs Paare mit je zehn Wiederholungen. Diese Befehle führen keine Modellaufrufe aus. Eigene JSON-Dateien benötigen je Handlung eine eindeutige `id` und einen `text`; `dimension` und `item` sind optional. `--language de` wählt für eigene deutsche Texte eine neutrale deutsche Fragestellung. Eine eigene Kontextfrage lässt sich mit `--prompt-file` ergänzen.
 
-Der [Leitfaden zur Übertragung](your-context.md) erklärt Instrumententwicklung, Pilotierung und Reichweite. Ein neues Instrument übernimmt nicht automatisch die Validierung des pädagogischen Instruments.
+Der [Leitfaden zur Übertragung](your-context.md) erklärt Instrumententwicklung, Pilotierung und Reichweite.
 
 ## Erheben und auswerten
 
@@ -43,4 +43,13 @@ uv run python tools/run_spe.py --provider anthropic --language en
 
 Deutsch ist das Originalprotokoll: 48 Prinzipien, 144 Beschreibungen, 10.296 Paare, zehn Wiederholungen. Englisch ist eine redaktionell geprüfte eigene Sprachbedingung ohne belegte Messäquivalenz. JSON und CSV liegen unter `instrument/`.
 
-Enthaltene Items, Beispiele und Dokumentation: CC BY 4.0. Eigener Code: MIT. Deine eigenen Instrumente werden dadurch nicht automatisch umlizenziert. Zitierinformationen: `CITATION.cff`.
+## Weitere Modelle
+
+Neben OpenAI und Anthropic unterstützt der Runner Chat-Completions-kompatible APIs, etwa Gemini oder einen lokalen Ollama-Server. Modell und Basis-URL werden ausdrücklich angegeben. Die [Hauptanleitung](../README.md#other-models-and-local-servers) enthält Befehle und unterstützte API-Felder.
+
+## Lizenzen
+
+- Code, Tests und CI: [MIT](../LICENSE).
+- Bildungsdatensatz, Beispielinstrumente und Dokumentation: [CC BY 4.0](../LICENSE-DATA).
+
+Copyright © 2026 Daniel Autenrieth. Die vollständigen Lizenztexte liegen im Repository; die Zuordnung zu Dateien steht in [REUSE.toml](../REUSE.toml). Bei Nachnutzung des Datensatzes Daniel Autenrieth nennen, Repository und Lizenz verlinken und Änderungen kennzeichnen. Zitierinformationen: [CITATION.cff](../CITATION.cff).
