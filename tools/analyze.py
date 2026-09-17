@@ -43,16 +43,18 @@ def analyze(payload, instrument):
             'tie_rate':sum(x==.5 for x in values)/len(values),
             'clear_rate':sum(x>.7 or x<.3 for x in values)/len(values),
             'thurstone':fit,'coherence':exact_transitivity(preferences,used),'win_scores':scores,
-            'definitions':{'fit':'Equal-weight complete pairs; sigma=1; mean utility=0; in-sample directional accuracy excludes observed 5:5 ties.','coherence':'All triples with three observed strict majorities; ties and missing edges excluded.','win_scores':'Mean observed win probability against available opponents.','limits':'Relative preference, not pedagogical quality. Sparse samples and separated preferences may yield unstable utility magnitudes.'}}
+            'definitions':{'fit':'Equal-weight complete pairs; sigma=1; mean utility=0; in-sample directional accuracy excludes observed equal-count ties.','coherence':'All triples with three observed strict majorities; ties and missing edges excluded.','win_scores':'Mean observed win probability against available opponents.','limits':'Relative preference, not an absolute quality score. Sparse samples and separated preferences may yield unstable utility magnitudes.'}}
 
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--input',type=Path,required=True);p.add_argument('--language',choices=['de','en'],default='de');p.add_argument('--output-dir',type=Path,required=True)
+    p.add_argument('--input',type=Path,required=True);p.add_argument('--language');p.add_argument('--instrument',type=Path);p.add_argument('--output-dir',type=Path,required=True)
     a=p.parse_args();root=Path(__file__).resolve().parents[1]
-    f=root/f'instrument/outcomes.{a.language}.json';raw=f.read_bytes();instrument=json.loads(raw)
+    f=a.instrument or root/f'instrument/outcomes.{a.language or "de"}.json';raw=f.read_bytes();instrument=json.loads(raw)
+    language=instrument.get('meta',{}).get('language', a.language or 'de')
+    if a.language and a.language != language:raise ValueError('Instrument language mismatch')
     payload=json.loads(a.input.read_text());meta=payload.get('meta',{})
-    if meta.get('language',a.language)!=a.language:raise ValueError('Language mismatch')
+    if meta.get('language',language)!=language:raise ValueError('Language mismatch')
     if meta.get('outcomes_sha256') and meta['outcomes_sha256']!=hashlib.sha256(raw).hexdigest():raise ValueError('Instrument hash mismatch')
     result=analyze(payload,instrument)
     result['input_sha256']=hashlib.sha256(a.input.read_bytes()).hexdigest();result['instrument_sha256']=hashlib.sha256(raw).hexdigest()

@@ -1,14 +1,14 @@
 cff-version: 1.2.0
 message: "Cite this release for the instrument/software and cite the research paper separately."
-title: "SPE replication: Educational preference elicitation in German and English"
+title: "SPEctrum: Structured Preference Elicitation for your context"
 type: software
 authors:
   - family-names: Autenrieth
     given-names: Daniel
-version: 1.0.0
+version: 1.1.0
 date-released: 2026-09-17
-url: "https://github.com/brianadvent/spe-replication"
-repository-code: "https://github.com/brianadvent/spe-replication"
+url: "https://github.com/brianadvent/spectrum"
+repository-code: "https://github.com/brianadvent/spectrum"
 license:
   - MIT
   - CC-BY-4.0

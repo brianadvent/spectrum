@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Robuster Runner für die SPE-Replikation 2026.
+"""SPEctrum: balancierte Präferenzerhebung für eigene Instrumente.
 
 Der Standardmodus ist ein vollständig lokaler Dry-Run. Netzwerkzugriffe sind
 nur mit --execute und einer exakten Request-Bestätigung möglich.
@@ -113,10 +113,11 @@ def load_protocol(path: Path) -> dict[str, Any]:
     return protocol
 
 
-def resolve_outcomes_path(protocol: dict[str, Any], override: Path | None) -> Path:
+def resolve_outcomes_path(protocol: dict[str, Any], override: Path | None, protocol_path: Path = DEFAULT_PROTOCOL) -> Path:
     if override is not None:
         return override.resolve()
-    return (REPO_ROOT / protocol["outcomes"]["relative_path"]).resolve()
+    base = protocol_path.resolve().parent if protocol.get("path_base") == "protocol" else REPO_ROOT
+    return (base / protocol["outcomes"]["relative_path"]).resolve()
 
 
 def load_and_validate_outcomes(path: Path, protocol: dict[str, Any]) -> tuple[list[Outcome], dict[str, Any]]:
@@ -131,7 +132,11 @@ def load_and_validate_outcomes(path: Path, protocol: dict[str, Any]) -> tuple[li
     if not isinstance(rows, list):
         raise ProtocolError("outcomes.json enthält keine Outcome-Liste")
 
-    outcomes = [Outcome(str(row["id"]), str(row["text"])) for row in rows]
+    if any(not isinstance(row, dict) or any(not isinstance(row.get(k), str) for k in ("id", "text")) for row in rows):
+        raise ProtocolError("Every outcome requires string id and text fields")
+    if any("|" in row["id"] for row in rows):
+        raise ProtocolError("Outcome IDs cannot contain the pair separator |")
+    outcomes = [Outcome(row["id"], row["text"]) for row in rows]
     expected_count = int(protocol["outcomes"]["expected_count"])
     if len(outcomes) != expected_count:
         raise ProtocolError(f"Erwartet {expected_count} Outcomes, gefunden {len(outcomes)}")
@@ -319,13 +324,13 @@ class ProviderAdapter:
             return {
                 "Authorization": f"Bearer {self.api_key}",
                 "Content-Type": "application/json",
-                "User-Agent": "dissertation-spe-replication/1.0",
+                "User-Agent": "spectrum-spe/1.1",
             }
         return {
             "x-api-key": self.api_key,
             "anthropic-version": self.config["anthropic_version"],
             "Content-Type": "application/json",
-            "User-Agent": "dissertation-spe-replication/1.0",
+            "User-Agent": "spectrum-spe/1.1",
         }
 
     async def request(self, prompt: str, max_output_tokens: int) -> dict[str, Any]:
@@ -785,8 +790,8 @@ async def execute_run(args: argparse.Namespace, protocol: dict[str, Any], outcom
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="SPE-Replikation 2026")
-    parser.add_argument("--language", choices=("de", "en"), default="de")
+    parser = argparse.ArgumentParser(description="SPEctrum — Structured Preference Elicitation")
+    parser.add_argument("--language", help="Bundled instrument: de/en; custom protocol: must match its declared language")
     parser.add_argument("--model", help="Explicit model ID; unavailable snapshots are never silently substituted")
     parser.add_argument("--provider", choices=("openai", "anthropic"), required=True)
     parser.add_argument("--protocol", type=Path, default=DEFAULT_PROTOCOL)
@@ -815,19 +820,27 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
     protocol = load_protocol(args.protocol.resolve())
-    protocol["language"] = args.language
-    protocol["outcomes"].update(protocol["instruments"][args.language])
-    if args.language == "en":
-        protocol["elicitation"]["user_prompt_template"] = protocol["english_prompt_template"]
+    language = args.language or protocol.get("language", "de")
+    if "instruments" in protocol:
+        if language not in protocol["instruments"]:
+            raise ProtocolError("The bundled instrument supports de or en")
+        protocol["outcomes"].update(protocol["instruments"][language])
+        if language == "en":
+            protocol["elicitation"]["user_prompt_template"] = protocol["english_prompt_template"]
+    elif language != protocol.get("language"):
+        raise ProtocolError("Language differs from the custom protocol; prepare a separate condition")
+    protocol["language"] = language
+    args.language = language
     if args.model:
         protocol["providers"][args.provider]["model"] = args.model
-    if protocol["elicitation"]["k_repetitions"] != 10:
-        raise ProtocolError("This release requires ten repetitions per pair")
+    k = protocol["elicitation"]["k_repetitions"]
+    if isinstance(k, bool) or not isinstance(k, int) or k < 2 or k % 2:
+        raise ProtocolError("Balanced A/B order requires a positive even repetition count")
     if protocol["elicitation"].get("system_prompt") is not None:
         raise ProtocolError("This runner does not support a system prompt")
     if protocol["elicitation"].get("sampling_parameters") is not None:
         raise ProtocolError("This runner does not support sampling overrides")
-    args.outcomes = resolve_outcomes_path(protocol, args.outcomes)
+    args.outcomes = resolve_outcomes_path(protocol, args.outcomes, args.protocol)
     processing = protocol["processing"]
     if args.concurrent_pairs is None:
         args.concurrent_pairs = int(processing["default_concurrent_pairs"])
@@ -862,7 +875,7 @@ def main(argv: list[str] | None = None) -> int:
     k = int(protocol["elicitation"]["k_repetitions"])
     total_requests = len(pairs) * k
 
-    print("SPE-Replikation 2026")
+    print("SPEctrum — Structured Preference Elicitation")
     print(f"Provider: {args.provider}")
     print(f"Modell: {protocol['providers'][args.provider]['model']}")
     print(f"Outcomes: {len(outcomes)} (Quelldatei-Metadatum: {outcome_meta.get('n_outcomes')})")

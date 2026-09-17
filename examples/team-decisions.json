@@ -1,0 +1,8 @@
+{
+  "outcomes": [
+    {"id": "consult-team", "dimension": "participation", "text": "Before choosing a project direction, ask each team member for their perspective and discuss the options together."},
+    {"id": "delegate-decision", "dimension": "autonomy", "text": "Let the team member closest to the problem choose the project direction and explain their reasoning to the others."},
+    {"id": "follow-evidence", "dimension": "evidence", "text": "Choose the project direction supported by the strongest available evidence, then explain the decision to the team."},
+    {"id": "run-small-trial", "dimension": "experimentation", "text": "Test two promising project directions on a small scale before the team commits to either one."}
+  ]
+}

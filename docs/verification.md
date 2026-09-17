@@ -9,3 +9,7 @@ Prepared 17 September 2026. Offline checks:
 - Provider payload/response handling is tested against local fixtures; no paid model endpoint was called.
 
 Run the checks yourself using the commands in README.md. Actual provider credentials, account access and current availability of historical models remain environment-specific and were not tested by paid requests.
+
+## SPEctrum 1.1.0
+
+The context-adaptation release adds preparation of arbitrary instruments, portable protocol-relative paths, custom prompts/languages, even repetition counts and instrument-aware analysis. Twenty-eight offline tests pass, including a four-action, four-repetition custom condition, balanced back-coding, custom analysis, modified-instrument rejection, language isolation, input validation and refusal to overwrite a prepared condition. The bundled educational instruments are unchanged.

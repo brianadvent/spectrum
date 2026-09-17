@@ -12,4 +12,6 @@ jobs:
       - run: uv run python tools/validate.py
       - run: uv run python tools/run_spe.py --provider openai
       - run: uv run python tools/run_spe.py --provider anthropic --language en
+      - run: uv run python tools/prepare.py --input examples/team-decisions.json --output-dir studies/example --language en --title "Example"
+      - run: uv run python tools/run_spe.py --provider openai --protocol studies/example/protocol.json
       - run: uv run python -m unittest discover -s tests -v
