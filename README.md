@@ -72,7 +72,9 @@ uv run python tools/run_spe.py --provider openai --model YOUR_MODEL_ID \
 
 Use the counts printed by your dry-run for your actual instrument. With $n$ actions and $k$ repetitions:
 
-$$N_{\mathrm{pairs}} = \binom{n}{2} = \frac{n(n-1)}{2}, \qquad N_{\mathrm{choices}} = k\,N_{\mathrm{pairs}}.$$
+```math
+N_{\mathrm{pairs}} = \binom{n}{2} = \frac{n(n-1)}{2}, \qquad N_{\mathrm{choices}} = k\,N_{\mathrm{pairs}}.
+```
 
 Half the presentations use each A/B order. The saved API-attempt budget includes retries and survives restarts; it limits requests, not currency cost. Model defaults in the bundled protocol reflect study snapshots. Specify an available model yourself; incompatible API settings must be explicitly edited in a separate protocol. Models are never silently substituted.
 
@@ -111,7 +113,9 @@ uv run python tools/analyze.py --input runs/team-decisions/preferences.json \
 
 Outputs: `analysis.json` and `utilities.csv`, with mean observed choice rates, Thurstone utilities, fit and coherence. Instrument and language must match the collected run. Utilities describe relative priorities within your selected actions, not absolute quality.
 
-$$P(A \succ B) = \Phi\!\left(\frac{\mu_A-\mu_B}{\sqrt{2}}\right).$$
+```math
+P(A \succ B) = \Phi\!\left(\frac{\mu_A-\mu_B}{\sqrt{2}}\right).
+```
 
 Thurstone Case V uses unit variance, centered utilities and equal weights for complete pairs. Directional accuracy is in-sample and excludes tied majorities. Transitivity uses triples with three observed strict majorities. Missing choices are not imputed; disconnected comparison graphs are rejected. See [protocol and analysis details](docs/protocol.md).
 
